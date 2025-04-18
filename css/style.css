@@ -137,7 +137,7 @@ p {
 
 p.sub_text {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 30px;
     text-align: justify;
     color: #544E5F;
@@ -652,6 +652,7 @@ section.banner-section h1 {
 /* Buffer */
 section.buffeer_sec {
     background: #F2F4F7;
+    padding: 40px 0;
 }
 
 .buffer_main img {
@@ -777,7 +778,12 @@ section.greet_meet .container::before {
     margin-bottom: 30px;
 }
 
-.parties_moment a,
+.parties_moment a {
+    border-radius: 100px;
+    font-size: 15px;
+    padding: 10px 40px;
+}
+
 .parties_moment a:after {
     border-radius: 100px;
     font-size: 15px;
@@ -1741,10 +1747,12 @@ section.customer_review {
 
 @media screen and (max-width: 500px) {
 
+    .specify_content>div {
+        width: 100%;
+    }
+
     .specify_content p {
-        position: relative;
-        padding-left: 25px;
-        font-size: 11px;
+        justify-content: left;
     }
 
     .banner_subscribe button {
