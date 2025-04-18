@@ -1636,7 +1636,7 @@ section.customer_review {
 
     section.banner-section::after,
     section.banner-section::before {
-        width: 150px;
+        width: 130px;
         height: 150px;
         background-size: 100%;
     }
