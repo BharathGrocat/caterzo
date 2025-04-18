@@ -909,7 +909,7 @@ section.why_choose::after {
 /* client Testmonial */
 
 section.customer_review {
-    background-image: url(/image/customer_bg.png);
+    background-image: url(../image/customer_bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
