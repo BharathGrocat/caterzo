@@ -1473,6 +1473,12 @@ section.customer_review {
         display: none;
     }
 
+    section.customer_review {
+        background-image: url(../image/banner_bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
 
 
 }
@@ -1628,6 +1634,13 @@ section.customer_review {
         width: 50%;
     }
 
+    section.banner-section::after,
+    section.banner-section::before {
+        width: 150px;
+        height: 150px;
+        background-size: 100%;
+    }
+
 
 
 
@@ -1653,13 +1666,6 @@ section.customer_review {
     .banner_subscribe button {
         padding: 15px 18px;
         font-size: 16px;
-    }
-
-    section.banner-section::after,
-    section.banner-section::before {
-        width: 30%;
-        height: 25%;
-        background-size: 100% 100%;
     }
 
     .banner_subscribe button i {
