@@ -237,7 +237,7 @@ img {
 }
 
 .cater-header nav .logo {
-    width: 150px;
+    width: 180px;
     height: auto;
 }
 
@@ -246,7 +246,7 @@ img {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 0;
-    gap: 20px
+    width: 100%;
 }
 
 .cater-header nav .links li {
@@ -290,6 +290,7 @@ img {
 /* Hover Effect for Text Links */
 .cater-header nav .links a i {
     font-size: 40px;
+    margin-top: 6px;
 }
 
 .cater-header .dropdown-parent span::before {
@@ -566,7 +567,7 @@ section.banner-section h1 {
 .banner-section .specify_content {
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
 }
@@ -629,25 +630,23 @@ section.banner-section h1 {
 
 .specify_content p {
     position: relative;
-    padding-left: 35px;
     padding-bottom: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Gilroy-regular';
     font-weight: 600;
     letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.specify_content p::before {
-    content: '';
-    position: absolute;
-    background-image: url(../image/tick.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    top: -7%;
+.specify_content>div {
+    width: 50%;
+}
+
+.specify_content p img {
+    width: 12%;
+    padding-right: 10px;
 }
 
 /* Buffer */
@@ -1158,6 +1157,7 @@ section.customer_review {
 
 
 @media screen and (max-width: 1300px) {
+
     section.banner-section h1 {
         width: 100%;
     }
@@ -1173,7 +1173,7 @@ section.customer_review {
 
 @media screen and (max-width: 1200px) {
     .cater-header nav .links a:not(:has(img)) {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .cater-header nav {
@@ -1186,7 +1186,7 @@ section.customer_review {
     }
 
     .banner-section .specify_content {
-        width: 70%;
+        width: 75%;
     }
 
     .specify_content p {
@@ -1204,13 +1204,16 @@ section.customer_review {
         bottom: 10%;
     }
 
+
 }
 
 @media screen and (max-width: 1100px) {
-    .cater-header nav .links {
-        gap: 8px;
-    }
 
+
+    .cater-header .links li {
+        position: relative;
+        margin: 0 10px;
+    }
 
     section.banner-section::after,
     section.banner-section::before {
@@ -1738,13 +1741,6 @@ section.customer_review {
 
 @media screen and (max-width: 500px) {
 
-
-    .specify_content p::before {
-        width: 20px;
-        height: 20px;
-        top: -6%;
-    }
-
     .specify_content p {
         position: relative;
         padding-left: 25px;
@@ -1758,6 +1754,11 @@ section.customer_review {
 
     .banner_subscribe button i {
         font-size: 14px;
+    }
+
+    .specify_content p img {
+        width: 30px;
+        padding-right: 10px;
     }
 
     .banner_subscribe .form-group i {
