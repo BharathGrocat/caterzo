@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .tooltip {
+      opacity: 0;
+      z-index: 3;
+      color: #bbb;
+      width: 190px;
+      display: block;
+      font-size: 11px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #111;
+      background: rgba(51, 51, 51, 0.9);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+      transition: all .2s ease-in-out;
+    }
+
+    .tooltip:before,
+    .tooltip:after {
+      content: '';
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid rgba(51, 51, 51, 0.9);
+      position: absolute;
+      bottom: -10px;
+      left: 43%;
+    }
+
+    .tooltip-container:hover .tooltip,
+    a:hover .tooltip {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="tooltip-container">
+    Hover Me !
+    <span class="tooltip">Praesent ut tincidunt ligula. Donec at sem sit amet nulla porttitor consequat sit amet quis
+      velit. Phasellus imperdiet mi in velit gravida tincidunt.</span>
+  </div>
+
+</body>
+
+</html>
