@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+// detail filter open
 $('.reveal-click').click(function () {
   let panel = $('.service_listing .service_lft');
   if (panel.is(':visible')) {
@@ -322,6 +322,47 @@ $('.reveal-click').click(function () {
   $(this).toggleClass('clientsClose');
 });
 
+
+// light box close
+$('.light-click').click(function () {
+  let panel = $('.lightbox');
+  if (panel.is(':visible')) {
+    panel.animate({ width: '0' }, 300, function () {
+      panel.hide();
+    });
+  } else {
+    panel.show().animate({ width: '100%' }, 300); // or your default width
+  }
+
+  $(this).toggleClass('clientsClose');
+});
+
+// lightbox add item
+$('.add-item').click(function () {
+  let panel = $('.lightbox');
+
+  
+  if (!panel.is(':visible')) {
+    panel.show().animate({ width: '100%' }, 300); 
+  }
+
+  $(this).addClass('clientsClose'); 
+});
+
+// Detail cart open
+
+$('.mobcart-click').click(function () {
+  let panel = $('.detail_main .detail_cart');
+  if (panel.is(':visible')) {
+    panel.animate({ width: '0' }, 300, function () {
+      panel.hide();
+    });
+  } else {
+    panel.show().animate({ width: '100%' }, 300); // or your default width
+  }
+
+  $(this).toggleClass('clientsClose');
+});
 
 
 
