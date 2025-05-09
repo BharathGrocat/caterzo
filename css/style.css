@@ -5250,7 +5250,7 @@ select:focus-visible {
     }
 
     .service_main .card {
-        width: 46%;
+        width: 100%;
     }
 
     .service_collection h4,
