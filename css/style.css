@@ -1,90 +1,90 @@
 @font-face {
-    src: url('../font/Synonym.ttf');
+    src: url('../../font/Synonym.ttf');
     font-family: 'Synonym';
 }
 
 @font-face {
-    src: url('../font/Lexend-Regular.ttf');
+    src: url('../../font/Lexend-Regular.ttf');
     font-family: 'Lexend-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-Regular.ttf');
+    src: url('../../font/Archivo-Regular.ttf');
     font-family: 'Archivo-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-SemiBold.ttf');
+    src: url('../../font/Archivo-SemiBold.ttf');
     font-family: 'Archivo-semibold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Regular.ttf');
+    src: url('../../font/Poppins-Regular.ttf');
     font-family: 'Poppins-regular';
 }
 
 @font-face {
-    src: url('../font/Poppins-SemiBold.ttf');
+    src: url('../../font/Poppins-SemiBold.ttf');
     font-family: 'Poppins-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Medium.ttf');
+    src: url('../../font/Poppins-Medium.ttf');
     font-family: 'Poppins-Medium';
 }
 
 @font-face {
-    src: url('../font/Poppins-Light.ttf');
+    src: url('../../font/Poppins-Light.ttf');
     font-family: 'Poppins-Light';
 }
 
 @font-face {
-    src: url('../font/Poppins-Bold.ttf');
+    src: url('../../font/Poppins-Bold.ttf');
     font-family: 'Poppins-bold';
 }
 
 @font-face {
-    src: url('../font/Inter-Bold.ttf');
+    src: url('../../font/Inter-Bold.ttf');
     font-family: 'Inter-Bold';
 }
 
 @font-face {
-    src: url('../font/Inter-SemiBold.ttf');
+    src: url('../../font/Inter-SemiBold.ttf');
     font-family: 'Inter-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Inter-Light.ttf');
+    src: url('../../font/Inter-Light.ttf');
     font-family: 'Inter-Light';
 }
 
 @font-face {
-    src: url('../font/Inter-Regular.ttf');
+    src: url('../../font/Inter-Regular.ttf');
     font-family: 'Inter-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Regular.ttf');
+    src: url('../../font/Gilroy-Regular.ttf');
     font-family: 'Gilroy-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Medium.ttf');
+    src: url('../../font/Gilroy-Medium.ttf');
     font-family: 'Gilroy-Medium';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Bold.ttf');
+    src: url('../../font/Gilroy-Bold.ttf');
     font-family: 'Gilroy-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-extra-bold.ttf');
+    src: url('../../font/gilroy-extra-bold.ttf');
     font-family: 'Gilroy-extra-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-semibold.ttf');
+    src: url('../../font/gilroy-semibold.ttf');
     font-family: 'Gilroy-semibold';
 }
 
@@ -328,7 +328,7 @@ img {
     list-style: none;
 }
 
-.cater-header .links .sing_up {
+.cater-header .links .sing_up a {
     border: 2px solid #fff;
     border-radius: 100px;
     padding: 3px 22px;
@@ -339,7 +339,7 @@ img {
     font-family: 'Gilroy-semibold' !important;
 }
 
-.cater-header .links .login_btn {
+.cater-header .links .login_btn a {
     background: #fff;
     border-radius: 100px;
     color: #FC6C00;
@@ -355,7 +355,7 @@ img {
 /* Underline Effect Only for Text Links */
 .cater-header nav .links a:not(:has(img)) {
     display: block;
-    font-size: 17px;
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
     position: relative;
@@ -401,7 +401,7 @@ cater-header nav .links a span {
 
 .cater-header .links li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 13px;
 }
 
 .cater-header .dropdown {
@@ -1156,6 +1156,8 @@ section.customer_review {
     border: 0;
     border-bottom: 1px solid #8D8D8D;
     border-radius: 0;
+    width: 100%;
+    padding: 15px 5px;
 }
 
 .contact_form p {
@@ -1286,7 +1288,7 @@ section.customer_review {
 
 /* list main */
 .cater-header .search_list {
-    width: 34%;
+    width: 30%;
 }
 
 nav form.search_form {
@@ -1355,7 +1357,6 @@ nav form.search_form {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    width: 47%;
 }
 
 .service_main .filter-btn.active {
@@ -3859,6 +3860,21 @@ select:focus-visible {
     letter-spacing: 1px;
 }
 
+/* Thank you */
+.thankyou-section::before {
+    display: none;
+}
+
+.thankyou-section p {
+    font-family: 'Gilroy-semibold';
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.goback-btn .back-btn {
+    display: none;
+}
+
 /* responsive */
 @media screen and (max-width: 2500px) {}
 
@@ -3902,8 +3918,9 @@ select:focus-visible {
 
 @media screen and (max-width: 1200px) {
     .cater-header nav .links a:not(:has(img)) {
-        font-size: 15px;
+        font-size: 14px;
     }
+
 
     .cater-header nav {
         padding: 15px 2%;
@@ -4079,7 +4096,7 @@ select:focus-visible {
 
     .cater-header .links li {
         position: relative;
-        margin: 0 10px;
+        margin: 0 6px;
     }
 
     .choose_cont .vision_main {
@@ -4113,6 +4130,14 @@ select:focus-visible {
 }
 
 @media screen and (max-width: 992px) {
+
+    .goback-btn .brdcrmb {
+        display: none;
+    }
+
+    .goback-btn .back-btn {
+        display: block;
+    }
 
     li.user_btn i {
         color: #fff;
@@ -4435,25 +4460,6 @@ select:focus-visible {
         width: 100%;
     }
 
-    .service_listing .service_lft {
-        display: none;
-        position: absolute;
-        background: #fff;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        margin-right: 0;
-        padding: 30px;
-        overflow: scroll;
-        left: 0;
-        top: 0;
-    }
-
-    .service_lft .reveal-click {
-        display: block;
-    }
-
     .service_listing .servryt_content,
     .pickup_main .deliver_form,
     .pickup_main .picbtn {
@@ -4476,10 +4482,6 @@ select:focus-visible {
 
     .deliver_form .form-group {
         width: 48%;
-    }
-
-    .service_main .filter-btn {
-        width: 32%;
     }
 
     .service_main .service_cusion button {
@@ -5049,8 +5051,8 @@ select:focus-visible {
     /* Listing Page */
 
     .category_main .filter-btn {
-        font-size: 14px;
-        padding: 5px 10px;
+        font-size: 16px;
+        padding: 8px 15px;
     }
 
     .menu_serach .mob-filter button {
@@ -5072,6 +5074,11 @@ select:focus-visible {
     .pagination-wrapper .pag-btn,
     .pagination-wrapper button.main_nexbtn {
         font-size: 13px;
+    }
+
+
+    .service_main .card {
+        width: 100%;
     }
 
     /* detail page */
@@ -5249,9 +5256,6 @@ select:focus-visible {
         font-size: 25px;
     }
 
-    .service_main .card {
-        width: 100%;
-    }
 
     .service_collection h4,
     .service_collection p i {
@@ -5460,10 +5464,6 @@ select:focus-visible {
         align-items: center;
     }
 
-    .service_main .filter-btn {
-        width: 48%;
-    }
-
     .service_main .service_cusion button {
         width: 30%;
     }
@@ -5580,7 +5580,12 @@ select:focus-visible {
 
 @media screen and (max-width: 350px) {
 
-    .category_main .filter-btn,
+    .category_main .filter-btn {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    
     .menu_serach .mob-filter button {
         font-size: 10px;
         padding: 5px 10px;
