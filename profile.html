@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaterZO</title>
+    <!-- Required css -->
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cater-header">
+        <!-- NAV_BAR_SECTION START -->
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">
+                <a href="/">
+                    <img src="./image/site-Logo.png" alt="Cater-logo" title="Cater-logo">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li class="search_list">
+                    <form class="search_form" action="">
+                        <input type="text" class="searchTerm" id="searchInput1" placeholder="Search Caters & Cuisines">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <li class="user_btn"><a href="#work"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li class="sing_up"><a href="#work">Sign Up</a></li>
+                <li class="login_btn"><a href="#work">Login</a></li>
+                <li><a href="#work"><img src="./image/cart.png" alt=""></a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        <!-- NAV_BAR_SECTION END -->
+    </header>
+
+    <!-- main section -->
+    <section class="profile_section">
+        <div class="container">
+            <h2>Ranjith JB</h2>
+            <div class="customer_detail">
+                <a href="">+91 0349712661</a> | <a href="">sujendrapoojari420@gmail.com</a>
+            </div>
+            <div class="profile_detail">
+                <div class="d-flex align-items-start profile_check">
+
+                    <div class="nav flex-column nav-pills profile_nav" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-orders-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders"
+                            aria-selected="true"><i class="fa-solid fa-bag-shopping"></i> Orders</button>
+                        <button class="nav-link" id="v-pills-favorite-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-favorite" type="button" role="tab" aria-controls="v-pills-favorite"
+                            aria-selected="false"><i class="fa-solid fa-heart"></i> Favorites</button>
+                        <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment"
+                            aria-selected="false"></i><i class="fa-solid fa-wallet"></i> Payments</button>
+                        <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-address" type="button" role="tab" aria-controls="v-pills-address"
+                            aria-selected="false"><i class="fa-solid fa-location-dot"></i> Addresses</button>
+                        <button class="nav-link" id="v-pills-setting-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-setting" type="button" role="tab" aria-controls="v-pills-setting"
+                            aria-selected="false"><i class="fa-solid fa-gear"></i> Settings</button>
+                    </div>
+
+                    <div class="tab-content profile-credit" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-orders" role="tabpanel"
+                            aria-labelledby="v-pills-orders-tab">
+                            <h3>Past Orders</h3>
+                            <div class="profile_list">
+                                <!--  -->
+                                <div class="profilr_product">
+                                    <div class="prod_img">
+                                        <img src="./image/kj_detail1.png" alt="">
+                                    </div>
+                                    <div class="prod_ordered">
+                                        <div class="oreder_head">
+                                            <div>
+                                                <h4>KJ Catering <span>(Andra Style)</span></h4>
+                                                <h6>Banaswasdi, Bangalore</h6>
+                                                <p>ORDER #3523624644722764 | Sun Mar 2, 2025, 02:43 PM</p>
+                                            </div>
+                                            <div class="view_detorder">
+                                                <a href="">View Details</a>
+                                            </div>
+                                        </div>
+                                        <div class="deliver_date">
+                                            <p>Delivered on sun Mar 2, 2025, 03:10 pm</p> <img src="./image/tick.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="reorder_profile">
+                                    <h5>Veg mini X 20 <span>Total Paid: ₹ 21,000.</span></h5>
+                                    <div class="order_help">
+                                        <a href="">Reorder</a>
+                                        <a class="help_btn" href="">Help</a>
+                                    </div>
+                                </div>
+                                <!--  -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-favorite" role="tabpanel"
+                            aria-labelledby="v-pills-favorite-tab">favorite</div>
+                        <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
+                            aria-labelledby="v-pills-payment-tab">payment</div>
+                        <div class="tab-pane fade" id="v-pills-address" role="tabpanel"
+                            aria-labelledby="v-pills-address-tab">Address</div>
+                        <div class="tab-pane fade" id="v-pills-setting" role="tabpanel"
+                            aria-labelledby="v-pills-setting-tab">Settings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="cater_footer">
+        <div class="footer-mainsec"><!-- footer sec start -->
+            <div class="foot_subscribe"><!-- footer sec 1 start -->
+                <img src="./image/site-Logo.png" alt="">
+                <div class="subscribe_form">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="email" class="form-control"
+                                placeholder="Enter your email to get the latest news...">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div><!-- footer sec 1 end -->
+            <div class="container-fluid"><!-- footer sec 2 start -->
+                <div class="footer-inrmain row"><!-- footer row start -->
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>FOLLOW US ON</h4>
+                        <p class="join_us">Join Us</p>
+                        <div class="social-icon">
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div><!-- footer row end -->
+            </div><!-- footer sec 2 end -->
+
+            <div class="copy-ryt">
+                <p>Copyrights © 2025 All Rights Reserved.</p>
+            </div>
+
+        </div><!-- footer sec end -->
+    </footer>
+    </div>
+
+
+    <!-- footer -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/myscript.js"></script>
+
+
+</body>
+
+</html>

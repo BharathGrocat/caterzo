@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CaterZO</title>
+	<!-- Required css -->
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/owl.theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- custom css  -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+	<header class="cater-header">
+		<!-- NAV_BAR_SECTION START -->
+		<nav>
+			<input type="checkbox" id="nav-toggle">
+			<div class="logo">
+				<a href="/">
+					<img src="./image/site-Logo.png" alt="Cater-logo" title="Cater-logo">
+				</a>
+			</div>
+			<ul class="links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#">Help Center</a></li>
+				<li class="search_list">
+					<form class="search_form" action="">
+						<input type="text" class="searchTerm" id="searchInput1" placeholder="Search Caters & Cuisines">
+						<button type="submit" class="searchButton">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</li>
+				<li class="user_btn"><a href="#work"><i class="fa-solid fa-circle-user"></i></a></li>
+				<li class="sing_up"><a href="#work">Sign Up</a></li>
+				<li class="login_btn"><a href="#work">Login</a></li>
+				<li><a href="#work"><img src="./image/cart.png" alt=""></a></li>
+			</ul>
+			<label for="nav-toggle" class="icon-burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</label>
+		</nav>
+		<!-- NAV_BAR_SECTION END -->
+	</header>
+
+
+
+	<!-- Main Section start -->
+
+
+	<!-- services Main -->
+	<section class="service_main">
+		<div class="head_pickup">
+			<div class="container">
+				<div class="deliver_pick">
+					<p class="reveal-click1" onclick="closeDeliverPopup()"><i class="fa-solid fa-xmark"></i></p>
+					<div class="pickup_main">
+						<div class="picbtn" id="nav-tab" role="tablist">
+							<p class="picbtn-link active" id="nav-pick-tab" data-bs-toggle="tab"
+								data-bs-target="#nav-pick" type="button" role="tab" aria-controls="nav-pick"
+								aria-selected="true">Delivery</p>
+
+							<p class="picbtn-link" id="nav-delivery-tab" data-bs-toggle="tab"
+								data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery"
+								aria-selected="false">Pickup</p>
+						</div>
+
+
+						<div class="tab-content deliver_form" id="nav-tabContent">
+							<div class="tab-pane fade form_pick show active" id="nav-pick" role="tabpanel"
+								aria-labelledby="nav-pick-tab">
+								<form action="">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name"
+											placeholder="Delivery Address">
+									</div>
+									<div class="form-group">
+										<input type="date" class="form-control" placeholder="Date" id="date" />
+									</div>
+									<div class="form-group">
+										<input type="time" class="form-control" placeholder="Time" id="time" />
+									</div>
+									<div class="form-group">
+										<select class="form-select" aria-label="Default select example" required>
+											<option selected>Headcount</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane form_deliver fade" id="nav-delivery" role="tabpanel"
+								aria-labelledby="nav-delivery-tab">
+								<form action="">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name"
+											placeholder="Delivery Address">
+									</div>
+									<div class="form-group">
+										<input type="date" class="form-control" placeholder="Date" id="date" />
+									</div>
+									<div class="form-group">
+										<select class="form-select" aria-label="Default select example" required>
+											<option selected>Headcount</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<input type="time" class="form-control" placeholder="Time" id="time" />
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_edit">
+					<div>
+						<h3>Event details</h3>
+						<p></p>
+					</div>
+					<button class="edit_deliver">View/edit</button>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="container"><!-- container start-->
+
+			<div class="service_listing"><!-- row start-->
+				<!-- filter start -->
+				<div class="service_lft filters">
+					<p class="reveal-click"><i class="fa-solid fa-xmark"></i></p>
+					<h3>Services</h3>
+					<div class="filter-group service_bffr">
+						<button class="filter-btn" data-filter="buffet" data-group="service">
+							<img class="norm-none" src="./image/buffer.png" alt="">
+							<img class="hover-none" src="./image/buffet-hover.png" alt="">
+							<p>Buffet</p>
+						</button>
+						<button class="filter-btn" data-filter="leaf" data-group="service">
+							<img class="norm-none" src="./image/list_leaf.png" alt="">
+							<img class="hover-none" src="./image/leaf-hover.png" alt="">
+							<p>Leaf Service</p>
+						</button>
+						<button class="filter-btn" data-filter="delivery" data-group="service">
+							<img class="norm-none" src="./image/delivery-icon.png" alt="">
+							<img class="hover-none" src="./image/delivery-hover.png" alt="">
+							<p>Delivery Only</p>
+						</button>
+					</div>
+					<div class="filters_title">
+						<h3><span><i class="fa-solid fa-filter"></i></span>Filter</h3>
+					</div>
+					<div class="applied-filters">
+						<div class="add_removefilter">
+							<h4>Applied Filters:</h4>
+							<button id="clearFilters">Clear All</button>
+						</div>
+
+						<div id="appliedFiltersContainer"></div>
+					</div>
+
+
+					<h5>Type</h5>
+					<div class="filter-group service_type mb-0">
+						<button class="filter-btn" data-filter="restaurant" data-group="type"><i
+								class="fa-solid fa-check"></i>Restaurants</button>
+						<button class="filter-btn" data-filter="catering" data-group="type"><i
+								class="fa-solid fa-check"></i>Catering</button>
+					</div>
+
+					<h5>Cuisines</h5>
+					<div class="filter-group service_cusion">
+						<button class="filter-btn" data-filter="north" data-group="cuisine">
+							<img class="norm-none" src="./image/north_india.png" alt="">
+							<img class="hover-none" src="./image/north_hover.png" alt="">
+							<span>North Indian</span></button>
+						<button class="filter-btn" data-filter="south" data-group="cuisine">
+							<img class="norm-none" src="./image/south_india.png" alt="">
+							<img class="hover-none" src="./image/south_hover.png" alt="">
+							<span>South Indian</span></button>
+						<button class="filter-btn" data-filter="burger" data-group="cuisine">
+							<img class="norm-none" src="./image/burger.png" alt="">
+							<img class="hover-none" src="./image/burger-hover.png" alt="">
+							<span>Burger</span></button>
+						<button class="filter-btn" data-filter="pizza" data-group="cuisine">
+							<img class="norm-none" src="./image/pizza.png" alt="">
+							<img class="hover-none" src="./image/pizza-hover.png" alt="">
+							<span>Pizza</span>
+						</button>
+						<button class="filter-btn" data-filter="sandwiche" data-group="cuisine">
+							<img class="norm-none" src="./image/sandwish.png" alt="">
+							<img class="hover-none" src="./image/sandwish-hoover.png" alt="">
+							<span>Sandwiches</span>
+						</button>
+					</div>
+				</div>
+				<!-- filter end -->
+
+				<!-- listing start -->
+				<div class="servryt_content">
+					<!-- breadcrmb start -->
+					<div class="goback-btn">
+						<div class="back-btn">
+							<a href="#"><i class="fa-solid fa-chevron-left"></i> Back</a>
+						</div>
+						<div class="brdcrmb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul>
+								<li class="brdcrm_blistin brdcrm_blistin_1"><span itemprop="itemListElement"
+										itemscope="" itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="#"><span itemprop="name">Home</span></a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+								<li class="brdcrm_blistin brdcrm_blistin_1"><span itemprop="itemListElement"
+										itemscope="" itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="#"><span itemprop="name">Search</span></a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+								<li class="brdcrm_blistin brdcrm_blistin_2"><span itemprop="itemListElement"
+										itemscope="" itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="#"><span itemprop="name">Top Caters</span></a>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_serach">
+						<div class="search_list">
+							<form class="search_form" action="">
+								<input type="text" class="searchTerm" id="searchInput" placeholder="Search">
+								<button type="submit" class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</form>
+						</div>
+						<div class="mob-filter">
+							<button class="reveal-click mobileTrigger"><img src="./image/sort.png" alt="">Sort
+								By</button>
+						</div>
+					</div>
+					<!-- breadcrmb start -->
+					<div class="listing_title">
+						<h1>Top Caters for you</h1>
+						<span></span>
+						<p>288 Results</p>
+					</div>
+
+					<!-- Categaory  -->
+					<div class="category_main">
+						<div class="category_innr">
+							<button class="filter-btn active" data-filter="all" data-group="food">ALL</button>
+							<button class="filter-btn" data-filter="veg" data-group="food">Pure Veg</button>
+							<button class="filter-btn" data-filter="non-veg" data-group="food">Non Veg</button>
+						</div>
+					</div>
+
+					<div id="cardsContainer" class="service_collection">
+						<!--  -->
+						<div class="card buffet catering north veg">
+							<img src="./image/list_1.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>KJ Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>Banaswadi, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card buffet catering south non-veg">
+							<img src="./image/list_2.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>ATM Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>Kundapura, Udupi</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card leaf restaurant north south non-veg">
+							<img src="./image/list_3.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>JB Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card leaf restaurant south veg">
+							<img src="./image/list_4.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Gowri shankar Catering </h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery restaurant north south non-veg">
+							<img src="./image/list_5.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Anand Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery restaurant north veg">
+							<img src="./image/list_6.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>A&B Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card leaf catering north south non-veg">
+							<img src="./image/list_7.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Sagar Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card buffet catering sandwiche non-veg">
+							<img src="./image/list_8.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Suja Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery catering sandwiche non-veg">
+							<img src="./image/list_9.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Ranjith Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card leaf restaurant north veg">
+							<img src="./image/list_1.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Gowri shankar Catering </h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery restaurant north non-veg">
+							<img src="./image/list_2.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Anand Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery restaurant burger veg">
+							<img src="./image/list_3.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>A&B Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card leaf catering north burger non-veg">
+							<img src="./image/list_4.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Sagar Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card buffet catering pizza non-veg">
+							<img src="./image/list_8.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Suja Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+						<div class="card delivery catering sandwiche veg">
+							<img src="./image/list_9.png" alt="Catering 1">
+							<span class="food_style">Andra Style</span>
+							<div class="collect_detial">
+								<div class="collt_title">
+									<h4>Ranjith Catering</h4>
+									<span><i class="fa-solid fa-heart"></i></span>
+								</div>
+								<h6>KR Puram, Bangalore</h6>
+								<p><i class="fa-solid fa-star"></i>5.0 (10 Reviews)</p>
+							</div>
+						</div>
+						<!--  -->
+
+					</div>
+
+					<div id="noProductsMessage">
+						<strong>No products found</strong>
+					</div>
+
+					<!-- pagination -->
+
+					<div class="pagination-wrapper">
+						<div class="pagination_next">
+							<button id="goBtn" class="next-btn main_nexbtn">Next Page <i
+									class="fa-solid fa-arrow-right"></i></button>
+							<button id="previousBtn" class="pag-btn main_nexbtn"><i class="fa-solid fa-arrow-left"></i>
+								Prev
+								Page</button>
+						</div>
+						<div class="pag-info">
+
+							<button id="prevBtn" class="pag-btn"><i class="fa-solid fa-angle-left"></i></button>
+							<input type="text" id="currentPageInput" value="1" readonly /> of <span
+								id="totalPages"></span>
+							<button id="nextBtn" class="pag-btn"><i class="fa-solid fa-angle-right"></i></button>
+						</div>
+					</div>
+
+				</div>
+				<!-- listing end -->
+
+			</div><!-- row end-->
+		</div><!-- container end-->
+	</section>
+
+	<!-- footer -->
+	<footer class="cater_footer">
+		<div class="footer-mainsec"><!-- footer sec start -->
+			<div class="foot_subscribe"><!-- footer sec 1 start -->
+				<img src="./image/site-Logo.png" alt="">
+				<div class="subscribe_form">
+					<form action="" class="form-inline">
+						<div class="form-group">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input type="email" class="form-control"
+								placeholder="Enter your email to get the latest news...">
+						</div>
+						<button type="submit" class="btn btn-primary">Search</button>
+					</form>
+				</div>
+			</div><!-- footer sec 1 end -->
+			<div class="container-fluid"><!-- footer sec 2 start -->
+				<div class="footer-inrmain row"><!-- footer row start -->
+					<!--  -->
+					<div class="footer-inrdiv col-lg-3">
+						<h4>Column One</h4>
+						<div class="main-servi">
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="footer-inrdiv col-lg-3">
+						<h4>Column One</h4>
+						<div class="main-servi">
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="footer-inrdiv col-lg-3">
+						<h4>Column One</h4>
+						<div class="main-servi">
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+							<p><a href="">Twenty One</a></p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="footer-inrdiv col-lg-3">
+						<h4>FOLLOW US ON</h4>
+						<p class="join_us">Join Us</p>
+						<div class="social-icon">
+							<a href=""><i class="fa-brands fa-youtube"></i></a>
+							<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+							<a href=""><i class="fa-brands fa-x-twitter"></i></a>
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+							<a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+						</div>
+					</div>
+					<!--  -->
+				</div><!-- footer row end -->
+			</div><!-- footer sec 2 end -->
+
+			<div class="copy-ryt">
+				<p>Copyrights © 2025 All Rights Reserved.</p>
+			</div>
+
+		</div><!-- footer sec end -->
+	</footer>
+	</div>
+
+
+	<!-- footer -->
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="./js/myscript.js"></script>
+
+
+
+</body>
+
+</html>

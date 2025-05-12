@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaterZO</title>
+    <!-- Required css -->
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cater-header">
+        <!-- NAV_BAR_SECTION START -->
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">
+                <a href="/">
+                    <img src="./image/site-Logo.png" alt="Cater-logo" title="Cater-logo">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li class="search_list">
+                    <form class="search_form" action="">
+                        <input type="text" class="searchTerm" id="searchInput1" placeholder="Search Caters & Cuisines">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <li class="user_btn"><a href="#work"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li class="sing_up"><a href="#work">Sign Up</a></li>
+                <li class="login_btn"><a href="#work">Login</a></li>
+                <li><a href="#work"><img src="./image/cart.png" alt=""></a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        <!-- NAV_BAR_SECTION END -->
+    </header>
+    <section class="breadcrmb_sec">
+        <div class="container">
+            <div class="shippin_progress">
+                <div class="ship_innr">
+                    <img src="./image/ship.png" alt="">
+                    <p>Shopping Cart</p>
+                </div>
+                <div class="ship_innr">
+                    <img src="./image/checkout.png" alt="">
+                    <p>Checkout</p>
+                </div>
+                <div class="ship_innr">
+                    <img src="./image/order.png" alt="">
+                    <p>Checkout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main section -->
+    <section class="detail_sec">
+        <div class="container"><!-- container start -->
+            <div class="brdcrmb mt-3" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <ul>
+                    <li class="brdcrm_blistin brdcrm_blistin_1"><span itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#"><span itemprop="name">Home</span></a>
+                            <meta itemprop="position" content="1">
+                        </span>
+                    </li>
+
+                    <li class="brdcrm_blistin brdcrm_blistin_1"><span itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#"><span itemprop="name">Search</span></a>
+                            <meta itemprop="position" content="1">
+                        </span>
+                    </li>
+
+                    <li class="brdcrm_blistin brdcrm_blistin_2"><span itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#"><span itemprop="name">Top Caters</span></a>
+                            <meta itemprop="position" content="2">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkout_main row"><!-- row start -->
+                <div class="col-lg-8 cart_left">
+                    <h2>Shipping <span>(3)</span></h2>
+
+                    <div class="checkout_form">
+                        <form action="">
+                            <div class="main_form">
+                                <div class="form_name">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name *</label>
+                                        <input type="text" name="first-name" id="first-name" placeholder="John">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name *</label>
+                                        <input type="text" name="last-name" id="last-name" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <!-- 1 -->
+                                <div class="form-group country_code">
+                                    <label for="first-name">Country / Region *</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="Singapore">
+                                </div>
+                                <!--  -->
+                                <div class="form_location">
+                                    <div class="form-group">
+                                        <label for="first-name">Town / City *</label>
+                                        <input type="text" name="first-name" id="first-name" placeholder="Banglore">
+                                    </div>
+                                    <div class="form-group provider">
+                                        <label for="last-name">Province *</label>
+                                        <input type="text" name="last-name" id="last-name" placeholder="New York">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Postcode / ZIP *</label>
+                                        <input type="text" name="last-name" id="last-name" placeholder="21945">
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="form_name">
+                                    <div class="form-group">
+                                        <label for="first-name">Phone *</label>
+                                        <input type="text" name="first-name" id="first-name"
+                                            placeholder="+91 3482385025">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Email address *</label>
+                                        <input type="email" name="last-name" id="last-name"
+                                            placeholder="johndoe@example.com">
+                                    </div>
+                                </div>
+                                <!--  -->
+                            </div>
+                            <div class="diifer_address">
+                                <div class="address_checkbox">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" class="" value="Bike">
+                                    <label for="vehicle1" class="address_check"> Ship to a different
+                                        Address?</label>
+                                </div>
+                                <div class="main_form">
+                                    <div class="form_name">
+                                        <div class="form-group">
+                                            <label for="first-name">First Name *</label>
+                                            <input type="text" name="first-name" id="first-name" placeholder="John">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Last Name *</label>
+                                            <input type="text" name="last-name" id="last-name" placeholder="Doe">
+                                        </div>
+                                    </div>
+                                    <!-- 1 -->
+                                    <div class="form-group country_code">
+                                        <label for="first-name">Country / Region *</label>
+                                        <input type="text" name="first-name" id="first-name" placeholder="Singapore">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form_location">
+                                        <div class="form-group">
+                                            <label for="first-name">Town / City *</label>
+                                            <input type="text" name="first-name" id="first-name" placeholder="Banglore">
+                                        </div>
+                                        <div class="form-group provider">
+                                            <label for="last-name">Province *</label>
+                                            <input type="text" name="last-name" id="last-name" placeholder="New York">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Postcode / ZIP *</label>
+                                            <input type="text" name="last-name" id="last-name" placeholder="21945">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group">
+                                        <label for="first-name">Order Notes (optional)</label>
+                                        <textarea name="" id=""
+                                            placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+
+                                    <div class="form-group about_us">
+                                        <label for="first-name">Where did you hear About Us?</label>
+                                        <textarea name="" id=""
+                                            placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 cart_payment">
+                    <div class="summary-section">
+                        <div class="summary-row">
+                            <span class="cartryt_title">Subtotal</span>
+                            <span>$470.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="cartryt_title">Shipping</span>
+                            <span>New York, US</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="cartryt_title">Discount</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="cartryt_title">Shipping Costs</span>
+                            <span>$50.00</span>
+                        </div>
+
+                        <div class="email_pay">
+                            <p>Email Money Transfer</p>
+                            <img src="./image/interx.png" alt="">
+                        </div>
+
+                        <div class="apply-coupon">
+                            <input type="text" placeholder="Coupon code">
+                            <button>Apply Coupon</button>
+                        </div>
+
+                        <div class="policy_checkout">
+                            <div class="form-group">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" class="" value="Bike">
+                                <label for="vehicle1" class="address_check"> I confirm that my address is 100% correct
+                                    and WILL NOT hold Top Shelf BC liable if this shipment is sent to an incorrect
+                                    address. *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" class="" value="Bike">
+                                <label for="vehicle1" class="address_check"> Sign me up to receive email updates and
+                                    news (optional)</label>
+                            </div>
+
+                            <div class="point-container">
+                                <div class="point-info">
+                                    <div class="point-icon"><img src="./image/coin.png" alt=""></div>
+                                    <div class="point-text">
+                                        Your point <span class="point-value">10.850</span>
+                                    </div>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="cart_shipping">
+                            <button class="checkout-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Place
+                                Order | $520.00</button>
+                        </div>
+                        <div class="payment-icons">
+                            <p>SECURE PAYMENTS PROVIDED BY</p>
+                            <img src="./image/payment.png" alt="Visa">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row end -->
+        </div><!-- container end -->
+    </section>
+
+
+
+
+
+    <!-- footer -->
+    <footer class="cater_footer">
+        <div class="footer-mainsec"><!-- footer sec start -->
+            <div class="foot_subscribe"><!-- footer sec 1 start -->
+                <img src="./image/site-Logo.png" alt="">
+                <div class="subscribe_form">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="email" class="form-control"
+                                placeholder="Enter your email to get the latest news...">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div><!-- footer sec 1 end -->
+            <div class="container-fluid"><!-- footer sec 2 start -->
+                <div class="footer-inrmain row"><!-- footer row start -->
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>Column One</h4>
+                        <div class="main-servi">
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                            <p><a href="">Twenty One</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-inrdiv col-lg-3">
+                        <h4>FOLLOW US ON</h4>
+                        <p class="join_us">Join Us</p>
+                        <div class="social-icon">
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div><!-- footer row end -->
+            </div><!-- footer sec 2 end -->
+
+            <div class="copy-ryt">
+                <p>Copyrights © 2025 All Rights Reserved.</p>
+            </div>
+
+        </div><!-- footer sec end -->
+    </footer>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade payment_popup" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Payment Methods</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body payment_form">
+                    <div class="d-flex align-items-start payment_check">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <div class="pay_btn">
+                                <button class="nav-link active" id="v-pills-upi-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-upi" type="button" role="tab" aria-controls="v-pills-upi"
+                                    aria-selected="true"><img src="./image/upi.png" alt=""> UPI</button>
+                                <button class="nav-link" id="v-pills-pluxee-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-pluxee" type="button" role="tab"
+                                    aria-controls="v-pills-pluxee" aria-selected="false"><i
+                                        class="fa-solid fa-utensils"></i> Pluxee</button>
+                                <button class="nav-link" id="v-pills-credit-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-credit" type="button" role="tab"
+                                    aria-controls="v-pills-credit" aria-selected="false"><i
+                                        class="fa-regular fa-credit-card"></i> Credit / Debit
+                                    Card</button>
+                                <button class="nav-link" id="v-pills-paylater-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-paylater" type="button" role="tab"
+                                    aria-controls="v-pills-paylater" aria-selected="false"><i
+                                        class="fa-solid fa-arrow-right-arrow-left"></i> Paylater</button>
+                                <button class="nav-link" id="v-pills-wallet-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-wallet" type="button" role="tab"
+                                    aria-controls="v-pills-wallet" aria-selected="false"><i
+                                        class="fa-solid fa-clock-rotate-left"></i> Wallets</button>
+                                <button class="nav-link" id="v-pills-netbank-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-netbank" type="button" role="tab"
+                                    aria-controls="v-pills-netbank" aria-selected="false"><i
+                                        class="fa-solid fa-building-columns"></i> Netbanking</button>
+                                <button class="nav-link" id="v-pills-deliver-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-deliver" type="button" role="tab"
+                                    aria-controls="v-pills-deliver" aria-selected="false">Pay On Delivery</button>
+                            </div>
+                            <p>COD is currently unavailable</p>
+                        </div>
+                        <div class="tab-content popup-credit" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-upi" role="tabpanel"
+                                aria-labelledby="v-pills-upi-tab">
+                                <h4>Enter Credit / Debit card details</h4>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">Card Number</label>
+                                        <input type="text" name="first-name" id="first-name"
+                                            placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="card_expiry">
+                                        <div class="form-group">
+                                            <label for="">Expiry</label>
+                                            <input type="text" name="first-name" id="first-name" placeholder="MM/YY">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">CVV</label>
+                                            <input type="text" name="first-name" id="first-name" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="proceed_pay">Proceed to Pay</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-pluxee" role="tabpanel"
+                                aria-labelledby="v-pills-pluxee-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-credit" role="tabpanel"
+                                aria-labelledby="v-pills-credit-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-paylater" role="tabpanel"
+                                aria-labelledby="v-pills-paylater-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel"
+                                aria-labelledby="v-pills-wallet-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel"
+                                aria-labelledby="v-pills-wallet-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-netbank" role="tabpanel"
+                                aria-labelledby="v-pills-netbank-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/myscript.js"></script>
+
+    <style>
+        .payment_form .nav-link {
+            font-family: 'Gilroy-semibold';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 100%;
+            vertical-align: middle;
+            color: #000;
+            text-align: left;
+            padding: 15px 10px;
+        }
+
+        .payment_form .nav-link.active {
+            background: #FFF1E4;
+            color: #000;
+            border-radius: 0;
+            border-left: 4px solid #FA6A00;
+        }
+
+        .payment_form .nav-pills {
+            padding: 10px 0;
+            background: #F8F8F8;
+            width: 40%;
+        }
+
+        .payment_form .popup-credit {
+            width: 60%;
+        }
+
+        .payment_popup .modal-dialog {
+            max-width: 50%;
+        }
+
+        .popup-credit .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .popup-credit .form-group input,
+        .popup-credit .form-group label {
+            width: 100%;
+            font-size: 15px;
+            font-family: 'Gilroy-semibold';
+        }
+
+        .popup-credit .form-group input {
+            border: 1px solid #D6D6D6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .popup-credit .card_expiry {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .payment_form h4 {
+            font-family: 'Gilroy-semibold';
+            font-weight: 400;
+            font-size: 18px;
+            color: #353840;
+            border-top: 1px solid #D6D6D6;
+            border-bottom: 1px solid #D6D6D6;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+
+        .popup-credit .proceed_pay {
+            background: #1B9E45;
+            border: 0;
+            width: 100%;
+            margin: 30px 0;
+            padding: 10px;
+            font-family: 'Gilroy-semibold';
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        .payment_form p {
+            font-family: 'Gilroy-semibold';
+            font-weight: 400;
+            font-size: 14px;
+            color: #FC6C00;
+            padding: 10px;
+        }
+
+        .payment_form img {
+            width: 15px;
+        }
+
+        .payment_form .nav-link .fa-utensils,
+        .payment_form .nav-link .fa-arrow-right-arrow-left {
+            border: 2px solid;
+            padding: 4px 4px 2px;
+            border-radius: 50px;
+            font-size: 10px;
+        }
+
+        .payment_form .nav-link i {
+            margin-right: 3px;
+        }
+
+        .payment_form .nav-link.active i {
+            color: #FA6A00;
+        }
+
+        .payment_popup .modal-header {
+            border: 0;
+        }
+
+        .payment_popup .modal-title {
+            font-family: 'Inter-regular';
+            font-weight: 900;
+            font-size: 20px;
+            color: #3C3F47;
+        }
+
+        .payment_popup .modal-content {
+            padding: 30px 20px;
+            position: relative;
+        }
+
+        .payment_popup button.btn-close {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .payment_popup .modal-dialog {
+                max-width: 70%;
+            }
+        }
+
+        @media screen and (max-width: 990px) {
+            .payment_popup .modal-dialog {
+                max-width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+
+
+            .popup-credit .tab-pane {
+                width: 100%;
+            }
+
+            .payment_popup .modal-dialog {
+                max-width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .payment_popup .modal-content {
+                padding: 10px 10px;
+                position: relative;
+            }
+
+            .payment_popup .payment_form {
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .payment_popup .payment_check {
+                flex-wrap: wrap;
+            }
+
+            .payment_popup .payment_check>div {
+                width: 100%;
+                margin-right: 0 !important;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
