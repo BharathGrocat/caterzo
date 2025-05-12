@@ -1,90 +1,90 @@
 @font-face {
-    src: url('../font/Synonym.ttf');
+    src: url('../../font/Synonym.ttf');
     font-family: 'Synonym';
 }
 
 @font-face {
-    src: url('../font/Lexend-Regular.ttf');
+    src: url('../../font/Lexend-Regular.ttf');
     font-family: 'Lexend-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-Regular.ttf');
+    src: url('../../font/Archivo-Regular.ttf');
     font-family: 'Archivo-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-SemiBold.ttf');
+    src: url('../../font/Archivo-SemiBold.ttf');
     font-family: 'Archivo-semibold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Regular.ttf');
+    src: url('../../font/Poppins-Regular.ttf');
     font-family: 'Poppins-regular';
 }
 
 @font-face {
-    src: url('../font/Poppins-SemiBold.ttf');
+    src: url('../../font/Poppins-SemiBold.ttf');
     font-family: 'Poppins-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Medium.ttf');
+    src: url('../../font/Poppins-Medium.ttf');
     font-family: 'Poppins-Medium';
 }
 
 @font-face {
-    src: url('../font/Poppins-Light.ttf');
+    src: url('../../font/Poppins-Light.ttf');
     font-family: 'Poppins-Light';
 }
 
 @font-face {
-    src: url('../font/Poppins-Bold.ttf');
+    src: url('../../font/Poppins-Bold.ttf');
     font-family: 'Poppins-bold';
 }
 
 @font-face {
-    src: url('../font/Inter-Bold.ttf');
+    src: url('../../font/Inter-Bold.ttf');
     font-family: 'Inter-Bold';
 }
 
 @font-face {
-    src: url('../font/Inter-SemiBold.ttf');
+    src: url('../../font/Inter-SemiBold.ttf');
     font-family: 'Inter-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Inter-Light.ttf');
+    src: url('../../font/Inter-Light.ttf');
     font-family: 'Inter-Light';
 }
 
 @font-face {
-    src: url('../font/Inter-Regular.ttf');
+    src: url('../../font/Inter-Regular.ttf');
     font-family: 'Inter-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Regular.ttf');
+    src: url('../../font/Gilroy-Regular.ttf');
     font-family: 'Gilroy-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Medium.ttf');
+    src: url('../../font/Gilroy-Medium.ttf');
     font-family: 'Gilroy-Medium';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Bold.ttf');
+    src: url('../../font/Gilroy-Bold.ttf');
     font-family: 'Gilroy-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-extra-bold.ttf');
+    src: url('../../font/gilroy-extra-bold.ttf');
     font-family: 'Gilroy-extra-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-semibold.ttf');
+    src: url('../../font/gilroy-semibold.ttf');
     font-family: 'Gilroy-semibold';
 }
 
@@ -1241,7 +1241,7 @@ section.customer_review {
     background: #FA6A00;
     font-family: 'Gilroy-semibold';
     color: #fff;
-    padding: 10px 40px;
+    padding: 10px 0px;
     border-radius: 100px;
     width: 50%;
     text-align: center;
@@ -1813,6 +1813,30 @@ div#appliedFiltersContainer span {
 
 /* detail Page */
 /* mobile View */
+.form_pick .pick_submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+
+.pick_submit button {
+    border: 0;
+    width: 50%;
+    border: 1px solid #FA6A00;
+    background: #fff;
+    color: #FC6C00;
+    padding: 10px 0px;
+    border-radius: 100px;
+    margin-top: 20px;
+    font-family: 'Gilroy-semibold';
+}
+
+.pick_submit .submit-order {
+    background: #FA6A00;
+    color: #fff;
+}
 
 .goback-btn .back-btn,
 .top_btn .back-btn {
@@ -1845,7 +1869,7 @@ div#appliedFiltersContainer span {
 }
 
 section.top_btn {
-    padding-bottom: 0;
+    padding: 30px 0 0;
 }
 
 section.detail_sec {
@@ -2232,6 +2256,8 @@ div#menu_detail .customer_menu {
     text-transform: capitalize;
     padding: 10px 0;
     letter-spacing: 0.5px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .main-rightmenu .item-card {
@@ -2972,7 +2998,7 @@ section.breadcrmb_sec {
     font-size: 28px;
     font-family: 'Lexend-regular';
     border-bottom: 2px solid #C8C9CB;
-    margin: 40px 0;
+    margin: 20px 0 40px;
     padding-bottom: 20px;
 }
 
@@ -3992,6 +4018,16 @@ select:focus-visible {
         white-space: nowrap;
     }
 
+    .main-rightmenu .item-card {
+        height: auto;
+    }
+
+    .main-rightmenu .menu_cardimg img {
+        height: 200px;
+        object-fit: cover;
+        width: 200px;
+    }
+
     .main-rightmenu .items-grid::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
         background-color: #ffffff;
@@ -4231,7 +4267,6 @@ select:focus-visible {
 
     .goback-btn .back-btn {
         display: block;
-        margin: 10px 0 20px;
     }
 
     .goback-btn .back-btn a {
@@ -4500,7 +4535,6 @@ select:focus-visible {
 
     .customer_title h2 {
         font-size: 35px;
-        text-align: center;
         margin-bottom: 30px;
         margin-top: 0;
         font-family: 'Inter-Bold';
@@ -4590,7 +4624,7 @@ select:focus-visible {
     .head_pickup .deliver_pick {
         display: none;
         position: fixed;
-        top: 15%;
+        top: 20%;
         margin: auto;
         width: 50% !important;
         background: white;
@@ -4598,7 +4632,6 @@ select:focus-visible {
         z-index: 3;
         left: 0;
         padding: 50px 30px 40px;
-        height: 84%;
         overflow: scroll;
         right: 0;
     }
@@ -4668,16 +4701,26 @@ select:focus-visible {
     /* detail Page */
     /* mobile Detail */
 
+    .detail_title span.open_now {
+        display: none;
+    }
+
+    .detail_main .descripction {
+        margin-top: 15px;
+    }
+
+
     .detail_content .desktop_detail {
         display: none;
     }
 
     .detail_content .mobile_detail {
         display: block;
+        margin-top: 20px;
     }
 
     .service-rating .rate_cont p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .success_main .rating_main {
@@ -4703,11 +4746,6 @@ select:focus-visible {
 
     section.top_btn .brdcrmb {
         display: none;
-    }
-
-    .main-rightmenu .tabs,
-    .main-rightmenu .items-grid {
-        overflow: visible;
     }
 
     .detail_main .cart_order {
@@ -4864,6 +4902,16 @@ select:focus-visible {
         gap: 30px;
     }
 
+    section.detail_sec {
+        padding-top: 10px;
+    }
+
+
+
+    .cart_main .cart_left {
+        margin-top: 10px;
+    }
+
     /* order Page */
     .order_shipmain .cart_payment {
         padding: 0;
@@ -4921,7 +4969,7 @@ select:focus-visible {
 
     .profile_nav button.active {
         background: transparent !important;
-        border-bottom: 2px solid;
+        /* border-bottom: 2px solid; */
     }
 
     .profile_nav::-webkit-scrollbar-track {
@@ -4936,8 +4984,8 @@ select:focus-visible {
     }
 
     .profile_nav::-webkit-scrollbar-thumb {
-        background-color: #000000;
-        border: 2px solid #555555;
+        background-color: #FA6A00;
+        border: 0px solid #555555;
     }
 
     /* profile Page */
@@ -5088,12 +5136,6 @@ select:focus-visible {
         margin-top: 0px;
     }
 
-    .main-rightmenu .tabs,
-    .main-rightmenu .items-grid {
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
     .detail_main .detail_deliver {
         flex-wrap: wrap;
         gap: 50px;
@@ -5121,6 +5163,7 @@ select:focus-visible {
 
 
     /* Cart Page */
+
     .delivery_main .order_cont {
         padding: 30px 10px;
     }
@@ -5159,6 +5202,7 @@ select:focus-visible {
     .reorder_profile .order_help a {
         width: auto;
     }
+
 
 
 
@@ -5353,25 +5397,34 @@ select:focus-visible {
 
     .service_main .card img {
         border-radius: 12px 12px 0 0;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
     }
 
     .service_main .head_pickup {
         padding: 20px 0 15px;
+        margin-bottom: 0;
     }
 
 
 
     /* filer css */
+    .form_pick .pick_submit {
+        width: 95%;
+        position: absolute;
+        bottom: 4%;
+    }
 
     .head_pickup .deliver_pick {
         width: 100% !important;
-        top: 0%;
-        height: 100%;
-        padding-top: 130px;
+        top: 15%;
+        height: 80%;
+        padding-top: 80px;
     }
 
     .deliver_pick .reveal-click1 {
-        top: 9%;
+        top: 2%;
         right: 3%;
     }
 
@@ -5403,7 +5456,7 @@ select:focus-visible {
         width: 100% !important;
         top: 0%;
         height: 100%;
-        padding: 100px 20px 30px; 
+        padding: 100px 20px 30px;
     }
 
     .customer_menu .menufilt-click {
@@ -5418,8 +5471,34 @@ select:focus-visible {
     /* filer css */
 
     /* detail page */
-    section.top_btn {
-        padding-top: 20px;
+    /* mobile detail */
+    .catering_slider .owl-dots {
+        margin: 20px 0 !important;
+        position: absolute;
+        bottom: -2%;
+        left: 0;
+        right: 0;
+    }
+
+    .mobile_detail .catering_slider {
+        margin-bottom: 20px;
+    }
+
+    .deliver_locat {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .deliver_locat a {
+        padding: 10px;
+        font-size: 14px;
+        width: 32%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     div#lightbox .dish_gallery {
@@ -5633,8 +5712,6 @@ select:focus-visible {
     }
 
     /* Detail Page */
-
-
     .main-rightmenu .tabs {
         display: flex;
         gap: 50px;
@@ -5652,11 +5729,6 @@ select:focus-visible {
     }
 
     /* mobile detail */
-    .deliver_locat {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
 
     .detail_title p {
         margin: 20px 0;
@@ -5824,16 +5896,6 @@ select:focus-visible {
         width: 15px;
     }
 
-    .deliver_locat a {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-
-    .detail_title span.open_now {
-        padding: 10px 12px;
-        font-size: 12px;
-    }
-
     .detail_title button {
         font-size: 14px;
         padding: 0 6px;
@@ -5865,7 +5927,7 @@ select:focus-visible {
     }
 
     .service-rating .rate_cont p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     /* cart Page */
@@ -5930,6 +5992,12 @@ select:focus-visible {
 
 
 
+}
+
+@media screen and (max-width: 400px) {
+    .service-rating .rate_cont p {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 350px) {
