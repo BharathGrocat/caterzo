@@ -1,90 +1,90 @@
 @font-face {
-    src: url('../../font/Synonym.ttf');
+    src: url('../font/Synonym.ttf');
     font-family: 'Synonym';
 }
 
 @font-face {
-    src: url('../../font/Lexend-Regular.ttf');
+    src: url('../font/Lexend-Regular.ttf');
     font-family: 'Lexend-regular';
 }
 
 @font-face {
-    src: url('../../font/Archivo-Regular.ttf');
+    src: url('../font/Archivo-Regular.ttf');
     font-family: 'Archivo-regular';
 }
 
 @font-face {
-    src: url('../../font/Archivo-SemiBold.ttf');
+    src: url('../font/Archivo-SemiBold.ttf');
     font-family: 'Archivo-semibold';
 }
 
 @font-face {
-    src: url('../../font/Poppins-Regular.ttf');
+    src: url('../font/Poppins-Regular.ttf');
     font-family: 'Poppins-regular';
 }
 
 @font-face {
-    src: url('../../font/Poppins-SemiBold.ttf');
+    src: url('../font/Poppins-SemiBold.ttf');
     font-family: 'Poppins-SemiBold';
 }
 
 @font-face {
-    src: url('../../font/Poppins-Medium.ttf');
+    src: url('../font/Poppins-Medium.ttf');
     font-family: 'Poppins-Medium';
 }
 
 @font-face {
-    src: url('../../font/Poppins-Light.ttf');
+    src: url('../font/Poppins-Light.ttf');
     font-family: 'Poppins-Light';
 }
 
 @font-face {
-    src: url('../../font/Poppins-Bold.ttf');
+    src: url('../font/Poppins-Bold.ttf');
     font-family: 'Poppins-bold';
 }
 
 @font-face {
-    src: url('../../font/Inter-Bold.ttf');
+    src: url('../font/Inter-Bold.ttf');
     font-family: 'Inter-Bold';
 }
 
 @font-face {
-    src: url('../../font/Inter-SemiBold.ttf');
+    src: url('../font/Inter-SemiBold.ttf');
     font-family: 'Inter-SemiBold';
 }
 
 @font-face {
-    src: url('../../font/Inter-Light.ttf');
+    src: url('../font/Inter-Light.ttf');
     font-family: 'Inter-Light';
 }
 
 @font-face {
-    src: url('../../font/Inter-Regular.ttf');
+    src: url('../font/Inter-Regular.ttf');
     font-family: 'Inter-regular';
 }
 
 @font-face {
-    src: url('../../font/Gilroy-Regular.ttf');
+    src: url('../font/Gilroy-Regular.ttf');
     font-family: 'Gilroy-regular';
 }
 
 @font-face {
-    src: url('../../font/Gilroy-Medium.ttf');
+    src: url('../font/Gilroy-Medium.ttf');
     font-family: 'Gilroy-Medium';
 }
 
 @font-face {
-    src: url('../../font/Gilroy-Bold.ttf');
+    src: url('../font/Gilroy-Bold.ttf');
     font-family: 'Gilroy-bold';
 }
 
 @font-face {
-    src: url('../../font/gilroy-extra-bold.ttf');
+    src: url('../font/gilroy-extra-bold.ttf');
     font-family: 'Gilroy-extra-bold';
 }
 
 @font-face {
-    src: url('../../font/gilroy-semibold.ttf');
+    src: url('../font/gilroy-semibold.ttf');
     font-family: 'Gilroy-semibold';
 }
 
