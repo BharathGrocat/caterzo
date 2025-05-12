@@ -4786,7 +4786,7 @@ select:focus-visible {
     }
 
     .left_sidebar .create-menu::before {
-        padding: 1px 7px;
+        padding: 2px 7px;
         right: -1%;
     }
 
