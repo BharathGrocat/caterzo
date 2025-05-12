@@ -4840,7 +4840,6 @@ select:focus-visible {
 
     .detail_main.row>div {
         width: 100%;
-        padding: 0;
     }
 
     .cart_close .mobcart-click {
@@ -5369,17 +5368,33 @@ select:focus-visible {
     .head_pickup .deliver_pick,
     .detail_main .detail_cart {
         width: 100% !important;
-        padding: 50px 10px;
+        padding: 80px 10px;
         height: 100%;
-        top: 11%;
+        top: 5%;
     }
 
     #menu_detail .left_sidebar,
     .service_listing .service_lft {
         width: 100% !important;
-        padding: 20px;
+        padding: 60px 20px;
         height: 100%;
-        top: 11%;
+        top: 5%;
+    }
+
+    .cart_close .mobcart-click {
+        top: 8%;
+    }
+
+    section .reveal-click {
+        top: 2%;
+    }
+
+    .deliver_pick .reveal-click1{
+        top: 3%;
+    }
+
+    .customer_menu .menufilt-click {
+        top: 1%;
     }
 
     div#lightbox .dish_gallery {
@@ -5790,7 +5805,7 @@ select:focus-visible {
     }
 
     .detail_title span.open_now {
-        padding: 7px 10px;
+        padding: 10px 12px;
         font-size: 12px;
     }
 
