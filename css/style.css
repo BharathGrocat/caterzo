@@ -5779,6 +5779,16 @@ select:focus-visible {
     }
 
     /* detail page */
+
+    .deliver_locat img {
+        width: 15px;
+    }
+
+    .deliver_locat a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
     .detail_title span.open_now {
         padding: 7px 10px;
         font-size: 12px;
@@ -5915,12 +5925,7 @@ select:focus-visible {
         font-size: 10px;
     }
 
-    .deliver_locat img {
-        width: 15px;
-    }
-
     .deliver_locat a {
-        padding: 4px 7px;
         font-size: 12px;
     }
 
