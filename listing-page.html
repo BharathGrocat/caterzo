@@ -63,66 +63,76 @@
 		<div class="head_pickup">
 			<div class="container">
 				<div class="deliver_pick">
-					<p class="reveal-click1" onclick="closeDeliverPopup()"><i class="fa-solid fa-xmark"></i></p>
-					<div class="pickup_main">
-						<div class="picbtn" id="nav-tab" role="tablist">
-							<p class="picbtn-link active" id="nav-pick-tab" data-bs-toggle="tab"
-								data-bs-target="#nav-pick" type="button" role="tab" aria-controls="nav-pick"
-								aria-selected="true">Delivery</p>
+					<div>
+						<p class="reveal-click1" onclick="closeDeliverPopup()"><i class="fa-solid fa-xmark"></i></p>
+						<div class="pickup_main">
+							<div class="picbtn" id="nav-tab" role="tablist">
+								<p class="picbtn-link active" id="nav-pick-tab" data-bs-toggle="tab"
+									data-bs-target="#nav-pick" type="button" role="tab" aria-controls="nav-pick"
+									aria-selected="true">Delivery</p>
 
-							<p class="picbtn-link" id="nav-delivery-tab" data-bs-toggle="tab"
-								data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery"
-								aria-selected="false">Pickup</p>
-						</div>
-
-
-						<div class="tab-content deliver_form" id="nav-tabContent">
-							<div class="tab-pane fade form_pick show active" id="nav-pick" role="tabpanel"
-								aria-labelledby="nav-pick-tab">
-								<form action="">
-									<div class="form-group">
-										<input type="text" class="form-control" id="name"
-											placeholder="Delivery Address">
-									</div>
-									<div class="form-group">
-										<input type="date" class="form-control" placeholder="Date" id="date" />
-									</div>
-									<div class="form-group">
-										<input type="time" class="form-control" placeholder="Time" id="time" />
-									</div>
-									<div class="form-group">
-										<select class="form-select" aria-label="Default select example" required>
-											<option selected>Headcount</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
-								</form>
+								<p class="picbtn-link" id="nav-delivery-tab" data-bs-toggle="tab"
+									data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery"
+									aria-selected="false">Pickup</p>
 							</div>
-							<div class="tab-pane form_deliver fade" id="nav-delivery" role="tabpanel"
-								aria-labelledby="nav-delivery-tab">
-								<form action="">
-									<div class="form-group">
-										<input type="text" class="form-control" id="name"
-											placeholder="Delivery Address">
-									</div>
-									<div class="form-group">
-										<input type="date" class="form-control" placeholder="Date" id="date" />
-									</div>
-									<div class="form-group">
-										<select class="form-select" aria-label="Default select example" required>
-											<option selected>Headcount</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<input type="time" class="form-control" placeholder="Time" id="time" />
-									</div>
 
-								</form>
+
+							<div class="tab-content deliver_form" id="nav-tabContent">
+								<div class="tab-pane fade form_pick show active" id="nav-pick" role="tabpanel"
+									aria-labelledby="nav-pick-tab">
+									<form action="">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name"
+												placeholder="Delivery Address">
+										</div>
+										<div class="form-group">
+											<input type="date" class="form-control" placeholder="Date" id="date" />
+										</div>
+										<div class="form-group">
+											<input type="time" class="form-control" placeholder="Time" id="time" />
+										</div>
+										<div class="form-group">
+											<select class="form-select" aria-label="Default select example" required>
+												<option selected>Headcount</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="pick_submit d-lg-none">
+											<button type="submit" class="submit-order">Update</button>
+											<button data-filter="all" data-group="food"
+												class="cancel-order">Cancel</button>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane form_deliver fade" id="nav-delivery" role="tabpanel"
+									aria-labelledby="nav-delivery-tab">
+									<form action="">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name"
+												placeholder="Delivery Address">
+										</div>
+										<div class="form-group">
+											<input type="date" class="form-control" placeholder="Date" id="date" />
+										</div>
+										<div class="form-group">
+											<select class="form-select" aria-label="Default select example" required>
+												<option selected>Headcount</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<input type="time" class="form-control" placeholder="Time" id="time" />
+										</div>
+										<div class="pick_submit d-lg-none">
+											<button type="submit" class="submit-order">Update</button>
+											<button class="cancel-order">Cancel</button>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
