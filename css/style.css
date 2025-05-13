@@ -4716,7 +4716,11 @@ select:focus-visible {
 
     .detail_content .mobile_detail {
         display: block;
-        margin-top: 20px;
+        margin-top: 0px;
+    }
+
+    section.top_btn.detail_topsec {
+        margin: 10px 0;
     }
 
     .service-rating .rate_cont p {
@@ -5028,6 +5032,10 @@ select:focus-visible {
 
     .profile_check .profile-credit {
         padding: 30px 0px 0;
+    }
+
+    .checkout_main h2 {
+        margin: 10px 0 40px;
     }
 
 }
@@ -5351,6 +5359,10 @@ select:focus-visible {
     }
 
     /* Listing Page */
+    .service_listing .servryt_content {
+        margin-top: 15px;
+    }
+
     .search_form button.searchButton {
         padding: 5px 15px;
     }
@@ -5472,12 +5484,20 @@ select:focus-visible {
 
     /* detail page */
     /* mobile detail */
+    section.top_btn.detail_topsec {
+        padding-top: 20px;
+    }
+
     .catering_slider .owl-dots {
         margin: 20px 0 !important;
         position: absolute;
         bottom: -2%;
         left: 0;
         right: 0;
+    }
+
+    section.top_btn {
+        padding: 20px 0 0;
     }
 
     .mobile_detail .catering_slider {
