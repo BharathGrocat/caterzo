@@ -4702,8 +4702,12 @@ select:focus-visible {
         position: absolute;
         top: 2%;
         right: 2%;
-        background: #ffffff;
-        padding: 6px 6px 1px;
+        border-radius: 100px;
+    }
+    .collt_title span i {
+        font-size: 15px;
+        padding: 7px 6px 5px;
+        background: #fff;
         border-radius: 100px;
     }
 
@@ -5387,10 +5391,6 @@ select:focus-visible {
 
     .menu_serach .mob-filter button {
         font-size: 10px;
-    }
-
-    .collt_title span i {
-        font-size: 22px;
     }
 
     .service_collection .collect_detial {
