@@ -4698,6 +4698,15 @@ select:focus-visible {
         margin-bottom: 5rem;
     }
 
+    .collt_title span {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        background: #ffffff;
+        padding: 6px 6px 1px;
+        border-radius: 100px;
+    }
+
     /* detail Page */
     /* mobile Detail */
 
