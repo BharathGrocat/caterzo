@@ -251,7 +251,8 @@
                     </div>
                     <!-- mobile Version end -->
 
-                    <p class="descripction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur
+                    <p class="descripction d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In consectetur
                         porta ultrices. Etiam
                         aliquet fringilla iaculis. Curabitur ut ullamcorper mi. Nam tempus non nulla vel placerat. Nulla
                         id purus nisl. Nulla vel aliquam ligula. Phasellus nulla metus, egestas id semper porttitor,
@@ -276,6 +277,11 @@
                                 <button class="nav-link" id="Reviews-tab" data-bs-toggle="tab"
                                     data-bs-target="#Reviews_detail" type="button" role="tab"
                                     aria-controls="contact_detail" aria-selected="false">Reviews</button>
+                            </li>
+                            <li class="nav-item d-lg-none" role="presentation">
+                                <button class="nav-link" id="aboutcater-tab" data-bs-toggle="tab"
+                                    data-bs-target="#aboutcater_detail" type="button" role="tab"
+                                    aria-controls="contact_detail" aria-selected="false">About</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -324,6 +330,11 @@
                                                 menu</button>
                                         </div>
                                         <button id="showAllBtn" class="d-none">Show All</button>
+                                        <div class="pick_submit d-flex text-center d-lg-none">
+                                            <button type="submit" class="submit-order">Update</button>
+                                            <button data-filter="all" data-group="food"
+                                                class="cancel-order">Cancel</button>
+                                        </div>
                                     </div>
                                     <!-- Main Content -->
                                     <div class="main-rightmenu">
@@ -745,6 +756,19 @@
                             <div class="tab-pane fade" id="Reviews_detail" role="tabpanel"
                                 aria-labelledby="Reviews-tab">...
                             </div>
+                            <div class="tab-pane fade " id="aboutcater_detail" role="tabpanel"
+                                aria-labelledby="aboutcater-tab">
+                                <p class="descripction ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    consectetur
+                                    porta ultrices. Etiam
+                                    aliquet fringilla iaculis. Curabitur ut ullamcorper mi. Nam tempus non nulla vel
+                                    placerat. Nulla
+                                    id purus nisl. Nulla vel aliquam ligula. Phasellus nulla metus, egestas id semper
+                                    porttitor,
+                                    volutpat at mi. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur
+                                    ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et </p>
+                            </div>
                         </div>
 
                     </div>
@@ -801,6 +825,7 @@
                         Wed 26/03/2025, 12:15 PM
                         <a href="#" class="change-link">Change</a>
                     </div>
+
 
                     <button class="quote-button">Get a quotation</button>
 
@@ -900,7 +925,7 @@
             top: 2%;
             right: 2%;
             z-index: 2;
-            padding: 3px 6px 1px;
+            padding: 6px 10px;
             background: #fff;
             border-radius: 40px;
         }
