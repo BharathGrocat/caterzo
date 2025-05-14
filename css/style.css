@@ -5510,6 +5510,7 @@ select:focus-visible {
         right: 0;
         margin: auto;
         background: #fff;
+        padding-bottom: 15px;
     }
 
     /* filer css */
