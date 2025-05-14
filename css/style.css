@@ -1805,8 +1805,8 @@ div#noProductsMessage {
 
 div#appliedFiltersContainer span {
     background: #EEEEEE;
-    padding: 2px 9px 8px 14px;
-    border-radius: 40px;
+    padding: 2px 9px 4px 14px;
+    border-radius: 3px;
     display: flex;
     align-items: center;
 }
@@ -1831,6 +1831,7 @@ div#appliedFiltersContainer span {
     border-radius: 100px;
     margin-top: 20px;
     font-family: 'Gilroy-semibold';
+    text-align: center !important;
 }
 
 .pick_submit .submit-order {
@@ -2331,7 +2332,7 @@ div#menu_detail .customer_menu {
     display: none;
 }
 
-.detail_main .detail_cart button {
+.detail_main .detail_cart .mobcart-click {
     display: none;
 }
 
@@ -2593,8 +2594,8 @@ button.menu-item.veg {
 
 .detail_cart .quote-button {
     margin-top: 20px;
-    padding: 12px 20px;
-    background-color: green;
+    padding: 10px 40px;
+    background-color: #1B9E45;
     color: white;
     border: none;
     border-radius: 25px;
@@ -4601,6 +4602,7 @@ select:focus-visible {
 
     .search_form input.searchTerm {
         margin-left: 10px;
+        padding: 10px 0;
     }
 
     .head_pickup .event_edit {
@@ -4702,17 +4704,22 @@ select:focus-visible {
         position: absolute;
         top: 2%;
         right: 2%;
+        background: #ffffff;
+        padding: 6px 6px 1px;
         border-radius: 100px;
     }
-    .collt_title span i {
+
+    .service_main #clearFilters {
         font-size: 15px;
-        padding: 7px 6px 5px;
-        background: #fff;
-        border-radius: 100px;
     }
 
     /* detail Page */
     /* mobile Detail */
+
+
+    .head_pickup .event_edit button {
+        padding: 8px 10px;
+    }
 
     .detail_title span.open_now {
         display: none;
@@ -4788,7 +4795,7 @@ select:focus-visible {
         text-align: center;
     }
 
-    .detail_main .detail_cart button {
+    .detail_main .detail_cart .mobcart-click {
         display: block;
         background: #fff;
         border: 0;
@@ -4838,6 +4845,7 @@ select:focus-visible {
         height: 75%;
         overflow: scroll;
         right: 0;
+        z-index: 5;
     }
 
     .left_sidebar .create-menu::before {
@@ -4869,6 +4877,11 @@ select:focus-visible {
 
     .mobile_menufilt button.menufilt-click {
         position: unset;
+        border: 2px solid #9C9C9C;
+        border-radius: 8px;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 14px;
     }
 
     .left_sidebar .selct_varient button {
@@ -5390,7 +5403,12 @@ select:focus-visible {
     }
 
     .menu_serach .mob-filter button {
-        font-size: 10px;
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+
+    .collt_title span i {
+        font-size: 22px;
     }
 
     .service_collection .collect_detial {
@@ -5431,16 +5449,10 @@ select:focus-visible {
 
 
     /* filer css */
-    .form_pick .pick_submit {
-        width: 95%;
-        position: absolute;
-        bottom: 4%;
-    }
 
     .head_pickup .deliver_pick {
         width: 100% !important;
         top: 15%;
-        height: 80%;
         padding-top: 80px;
     }
 
@@ -5465,7 +5477,7 @@ select:focus-visible {
         width: 100% !important;
         top: 0%;
         height: 100%;
-        padding-top: 130px;
+        padding: 130px 10px;
     }
 
     .cart_close .mobcart-click {
@@ -5477,7 +5489,7 @@ select:focus-visible {
         width: 100% !important;
         top: 0%;
         height: 100%;
-        padding: 100px 20px 30px;
+        padding: 100px 20px;
     }
 
     .customer_menu .menufilt-click {
@@ -5489,10 +5501,25 @@ select:focus-visible {
         font-size: 20px;
     }
 
+    .left_sidebar .pick_submit {
+        gap: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 95%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+    }
+
     /* filer css */
 
     /* detail page */
     /* mobile detail */
+    .main-rightmenu .tabs {
+        top: 4rem;
+    }
+
     section.top_btn.detail_topsec {
         padding-top: 20px;
     }
@@ -5527,7 +5554,7 @@ select:focus-visible {
         align-items: center;
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
     }
 
     div#lightbox .dish_gallery {
@@ -5749,7 +5776,7 @@ select:focus-visible {
     .catering_menu #menu_tab button.active,
     .catering_menu #menu_tab .nav-link:hover,
     .catering_menu #menu_tab .nav-link {
-        font-size: 16px;
+        font-size: 14px;
         padding: 0 10px;
     }
 
@@ -5921,6 +5948,10 @@ select:focus-visible {
 
     /* detail page */
 
+    .catering_menu ul#menu_tab {
+        gap: 0;
+    }
+
     .deliver_locat img {
         width: 15px;
     }
@@ -6036,12 +6067,6 @@ select:focus-visible {
         padding: 5px 15px;
     }
 
-
-    .menu_serach .mob-filter button {
-        font-size: 10px;
-        padding: 7px 10px;
-    }
-
     .head_pickup .event_edit button {
         font-size: 11px;
     }
@@ -6051,7 +6076,7 @@ select:focus-visible {
     }
 
     .service_main .service_cusion button {
-        width: 48%
+        width: 46%
     }
 
     section.banner-section h1 {
