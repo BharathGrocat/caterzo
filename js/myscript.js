@@ -341,20 +341,20 @@ $('.reveal-click').click(function () {
 
 
 
-const deliverTriggers = document.querySelectorAll('.edit_deliver');
-const deliverContent = document.querySelector('.deliver_pick');
+// const deliverTriggers = document.querySelectorAll('.edit_deliver');
+// const deliverContent = document.querySelector('.deliver_pick');
 
-function openDeliverPopup() {
-  deliverContent.style.display = 'block';
-}
+// function openDeliverPopup() {
+//   deliverContent.style.display = 'block';
+// }
 
-function closeDeliverPopup() {
-  deliverContent.style.display = 'none';
-}
+// function closeDeliverPopup() {
+//   deliverContent.style.display = 'none';
+// }
 
-deliverTriggers.forEach(trigger => {
-  trigger.addEventListener('click', openDeliverPopup);
-});
+// deliverTriggers.forEach(trigger => {
+//   trigger.addEventListener('click', openDeliverPopup);
+// });
 
 
 // light box close
@@ -582,7 +582,7 @@ tabs.forEach(tab => {
 
     const target = document.querySelector(tab.getAttribute('data-target'));
     if (target) {
-      const offsetTop = target.getBoundingClientRect().top + window.scrollY - 130;
+      const offsetTop = target.getBoundingClientRect().top + window.scrollY - 10;
       window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
   });
