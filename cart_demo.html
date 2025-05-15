@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkbox Toggle Form</title>
+  <style>
+    .differmain_form {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .differmain_form.show {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      padding: 6px;
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="diifer_address">
+    <div class="form-group">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+
+      <div class="differmain_form">
+        <div class="form_name">
+          <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" name="first-name" id="first-name" placeholder="John">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkbox = document.getElementById('vehicle1');
+      const differForm = document.querySelector('.differmain_form');
+
+      checkbox.addEventListener('change', function () {
+        differForm.classList.toggle('show', this.checked);
+      });
+    });
+  </script>
+
+</body>
+</html>
