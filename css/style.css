@@ -1233,13 +1233,14 @@ section.customer_review {
     display: flex;
     gap: 20px;
     align-items: center;
-    width: 30%;
+    width: 25%;
 }
 
 .pickup_main .picbtn-link {
-    background: #FA6A00;
+    border: 1px solid #FA6A00;
+    background: #fff;
+    color: #FC6C00;
     font-family: 'Gilroy-semibold';
-    color: #fff;
     padding: 10px 0px;
     border-radius: 100px;
     width: 50%;
@@ -1248,9 +1249,8 @@ section.customer_review {
 }
 
 .picbtn-link.active {
-    border: 1px solid #FA6A00;
-    background: #fff;
-    color: #FC6C00;
+    color: #fff;
+    background: #FA6A00;
 }
 
 .head_pickup .pickup_main {
@@ -1260,9 +1260,12 @@ section.customer_review {
 }
 
 .pickup_main .deliver_form {
-    width: 70%;
+    width: 75%;
 }
 
+.modal-header{
+    border: 0;
+}
 /* top form */
 .head_pickup .event_edit {
     display: none;
@@ -1302,7 +1305,15 @@ section.customer_review {
 }
 
 .deliver_form .form-group {
-    width: 25%;
+    width: 20%;
+}
+
+.form-group.delivery-time {
+    width: 15%;
+}
+
+.form-group.head-count {
+    width: 40%;
 }
 
 /* list main */
@@ -1560,6 +1571,7 @@ section.service_main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -10px;
 }
 
 .service_main div#appliedFiltersContainer {
@@ -1597,7 +1609,12 @@ section.service_main {
     padding: 30px 0;
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
-    margin: 30px 0;
+    margin: 30px 0 10px;
+}
+
+.deliver_form .head-count {
+    display: flex;
+    gap: 5px;
 }
 
 /* pagination */
@@ -1810,10 +1827,11 @@ div#appliedFiltersContainer span {
     align-items: center;
 }
 
+
 /* detail Page */
 /* mobile View */
 form .pick_submit {
-    width: 10%;
+    width: 15%;
 }
 
 .pick_submit button {
@@ -1821,7 +1839,7 @@ form .pick_submit {
     width: 100%;
     background: #FA6A00;
     color: #fff;
-    padding: 8px 10px;
+    padding: 10px 0px;
     border-radius: 100px;
     font-family: 'Gilroy-semibold';
     text-align: center !important;
@@ -2215,10 +2233,10 @@ div#menu_detail .customer_menu {
 
 .main-rightmenu .tabs {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-    justify-content: space-around;
+    justify-content: left;
     text-align: center;
     align-items: center;
     position: sticky;
@@ -4116,7 +4134,7 @@ select:focus-visible {
         overflow-y: hidden;
         width: auto;
         white-space: nowrap;
-        padding: 0 15px;
+        padding: 0 15px 0 0;
         margin-top: 25px;
     }
 
@@ -4144,7 +4162,7 @@ select:focus-visible {
     }
 
     .main-rightmenu .tabs div {
-        margin: 0 20px 10px;
+        margin: 0 20px 10px 0;
         padding-bottom: 0;
     }
 
@@ -4231,6 +4249,7 @@ select:focus-visible {
 
     .why_choose .choose_main>div {
         width: 100%;
+        padding: 0;
     }
 
     /* listing Page */
@@ -4582,6 +4601,15 @@ select:focus-visible {
     }
 
     /* listing page */
+    .pick_submit button {
+        font-size: 13px;
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        font-size: 16px;
+    }
+
 
     form .pick_submit {
         width: 100%;
@@ -4648,7 +4676,7 @@ select:focus-visible {
     }
 
     .deliver_form .form-group {
-        width: 100%;
+        width: 100% !important;
     }
 
     .deliver_pick .reveal-click1 {
@@ -4716,6 +4744,7 @@ select:focus-visible {
 
     .service_lft .filters_title h3 {
         border-top: 0;
+        margin-top: 20px;
     }
 
     .left_sidebar .pick_submit {
@@ -5333,11 +5362,15 @@ select:focus-visible {
 
 
     /* footer */
+
     /* home Page */
+    .sub_title {
+        font-size: 16px;
+    }
 
     .sub_heading {
         font-family: 'Gilroy-extra-bold';
-        margin: 10px 0;
+        margin: 0px 0 10px;
         font-size: 28px;
     }
 
@@ -5386,6 +5419,11 @@ select:focus-visible {
 
     .contact-form .form-group {
         margin: 10px 0 10px;
+    }
+
+    .feast_main.row>div,
+    .cater_main.row>div {
+        padding: 0;
     }
 
     form.contact-form {
