@@ -1263,9 +1263,10 @@ section.customer_review {
     width: 75%;
 }
 
-.modal-header{
+.modal-header {
     border: 0;
 }
+
 /* top form */
 .head_pickup .event_edit {
     display: none;
@@ -5961,6 +5962,11 @@ select:focus-visible {
         font-size: 14px;
         width: 50%;
         padding: 6px;
+    }
+
+    .main-rightmenu .main_add span {
+        padding: 0px 15px 4px;
+
     }
 
 
