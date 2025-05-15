@@ -1227,7 +1227,6 @@ section.customer_review {
 .service_main .head_pickup {
     padding: 30px 0 20px;
     background: #FFF3EB;
-    margin-bottom: 30px;
 }
 
 .pickup_main .picbtn {
@@ -1466,7 +1465,7 @@ nav form.search_form {
 
 section.service_main .service_listing {
     display: flex;
-    padding-bottom: 50px;
+    padding: 30px 0 50px;
 }
 
 section.service_main {
@@ -4119,18 +4118,18 @@ select:focus-visible {
     }
 
     .main-rightmenu .tabs::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        background-color: #F5F5F5;
+        -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+        background-color: #fff;
     }
 
     .main-rightmenu .tabs::-webkit-scrollbar {
         width: 2px;
-        background-color: #F5F5F5;
-        height: 5px;
+        background-color: #fff;
+        height: 1px;
     }
 
     .main-rightmenu .tabs::-webkit-scrollbar-thumb {
-        background-color: #000000;
+        background-color: #fff;
     }
 
     .detail_cart .cart-item {
@@ -4606,7 +4605,7 @@ select:focus-visible {
 
     .service_main .menu_serach {
         display: flex;
-        padding: 20px 0 0px;
+        padding: 30px 0 0px;
         width: 100%;
     }
 
@@ -4708,6 +4707,10 @@ select:focus-visible {
 
     /* detail Page */
     /* mobile Detail */
+    .detail_main .catering_menu {
+        margin: 20px 0;
+    }
+
     .service_lft .filters_title h3 {
         border-top: 0;
     }
@@ -4738,10 +4741,6 @@ select:focus-visible {
         margin-top: 0px;
     }
 
-    section.top_btn.detail_topsec {
-        margin: 10px 0;
-    }
-
     .service-rating .rate_cont p {
         font-size: 16px;
     }
@@ -4769,6 +4768,14 @@ select:focus-visible {
 
     section.top_btn .brdcrmb {
         display: none;
+    }
+
+    section.top_btn {
+        padding: 30px 0;
+    }
+
+    section.top_btn.detail_topsec {
+        margin-top: 20px;
     }
 
     .detail_main .cart_order {
@@ -4856,6 +4863,11 @@ select:focus-visible {
         font-size: 15px;
     }
 
+    .main-rightmenu .tabs .active {
+        border-bottom: 3px solid #FA6A00 !important;
+        color: #FA6A00 !important;
+    }
+
     .main-rightmenu .mobile_menufilt button {
         background: transparent;
         display: block;
@@ -4917,6 +4929,10 @@ select:focus-visible {
 
 
     /* cart page */
+    .cart_main .cart_left {
+        margin: 0;
+    }
+
     .cart_main .cart_payment {
         padding: 50px 15px;
     }
@@ -4931,15 +4947,6 @@ select:focus-visible {
         gap: 30px;
     }
 
-    section.detail_sec {
-        padding-top: 10px;
-    }
-
-
-
-    .cart_main .cart_left {
-        margin-top: 10px;
-    }
 
     /* order Page */
     .order_shipmain .cart_payment {
@@ -5060,7 +5067,7 @@ select:focus-visible {
     }
 
     .checkout_main h2 {
-        margin: 10px 0 40px;
+        margin: 0px 0 40px;
     }
 
     .mobile_profile .accordion-button::after {
@@ -5088,6 +5095,7 @@ select:focus-visible {
     .mobile_profile .accordion-button {
         background: #FEEEE2;
         color: #000;
+        gap: 10px;
     }
 
 
@@ -5412,10 +5420,6 @@ select:focus-visible {
     }
 
     /* Listing Page */
-    .service_listing .servryt_content {
-        margin-top: 15px;
-    }
-
     .search_form button.searchButton {
         padding: 5px 15px;
     }
@@ -5548,10 +5552,6 @@ select:focus-visible {
         top: 4rem;
     }
 
-    section.top_btn.detail_topsec {
-        padding-top: 20px;
-    }
-
     .catering_slider .owl-dots {
         margin: 20px 0 !important;
         position: absolute;
@@ -5560,8 +5560,12 @@ select:focus-visible {
         right: 0;
     }
 
+    section.top_btn.detail_topsec {
+        margin-top: 5px;
+    }
+
     section.top_btn {
-        padding: 20px 0 0;
+        padding: 30px 0;
     }
 
     .mobile_detail .catering_slider {
