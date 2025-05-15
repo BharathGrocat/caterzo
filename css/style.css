@@ -1247,7 +1247,7 @@ section.customer_review {
     font-size: 16px
 }
 
-.pickup_main #nav-pick-tab {
+.picbtn-link.active {
     border: 1px solid #FA6A00;
     background: #fff;
     color: #FC6C00;
