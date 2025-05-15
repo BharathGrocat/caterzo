@@ -1847,6 +1847,12 @@ form .pick_submit {
     font-size: 13px;
 }
 
+.pick_submit .cancel-order {
+    border: 1px solid #FA6A00;
+    background: #fff;
+    color: #FC6C00;
+}
+
 .goback-btn .back-btn,
 .top_btn .back-btn {
     display: none;
@@ -2605,7 +2611,6 @@ button.menu-item.veg {
 }
 
 .detail_cart .quote-button {
-    margin-top: 20px;
     padding: 10px 40px;
     background-color: #1B9E45;
     color: white;
@@ -5542,7 +5547,7 @@ select:focus-visible {
     }
 
     section .reveal-click {
-        top: 10%;
+        top: 8%;
         right: 3%;
     }
 
@@ -5965,7 +5970,7 @@ select:focus-visible {
     }
 
     .main-rightmenu .main_add span {
-        padding: 0px 15px 1px;
+        padding: 0px 15px 4px;
 
     }
 
