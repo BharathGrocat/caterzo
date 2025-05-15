@@ -1859,7 +1859,11 @@ form .pick_submit {
 }
 
 section.top_btn {
-    padding: 30px 0 0;
+    padding: 30px 0;
+}
+
+section.top_btn.detail_topsec {
+    margin-top: 15px;
 }
 
 section.detail_sec {
@@ -1891,7 +1895,7 @@ section.detail_sec {
     float: left;
     width: 100%;
     align-items: center;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .detail_deliver>div {
@@ -2689,7 +2693,6 @@ button.menu-item.veg {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 30px;
 }
 
 .cart-item .quantity-control {
@@ -2988,7 +2991,7 @@ section.breadcrmb_sec {
     font-size: 28px;
     font-family: 'Lexend-regular';
     border-bottom: 2px solid #C8C9CB;
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
     padding-bottom: 20px;
 }
 
