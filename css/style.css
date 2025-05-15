@@ -1788,7 +1788,7 @@ div#noProductsMessage {
     display: flex;
     border: 1px solid;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
     justify-content: space-between;
 }
 
@@ -4592,7 +4592,7 @@ select:focus-visible {
         border: 0;
         padding: 8px 15px;
         color: #fff;
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 4px 4px 0;
     }
 
     .search_form input.searchTerm {
