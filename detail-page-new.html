@@ -237,7 +237,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="pack_fooditem mt-3">
+                                    <div class="pack_fooditem mt-5">
                                         <h4 class="foodpack_type"> <img src="./new-img/non-veg.png" alt=""> Non Veg</h4>
                                         <div class="package_recoment">
                                             <div class="package_list">
@@ -1428,7 +1428,7 @@
 
         .modal-header button.btn-close {
             position: absolute;
-            top: 2%;
+            top: 1%;
             right: 2%;
         }
 
@@ -2157,6 +2157,11 @@
             .detail_main .detail_content {
                 height: auto;
             }
+
+            .detail_main.row>div {
+                width: 100%;
+                padding: 0;
+            }
         }
 
         @media screen and (max-width: 767px) {
@@ -2247,6 +2252,65 @@
             .fooditem_slide .owl-nav {
                 display: none;
             }
+
+            .popup_listpack .modal-body {
+                padding: 0 20px 20px;
+            }
+
+
+            .popup_listpack .modal-body li {
+                font-size: 14px;
+            }
+
+            .popup_listpack .modal-content .modal-body ul {
+                padding: 10px 10px 10px 30px;
+                margin: 10px 0;
+            }
+
+            .popup_listpack .modal-body .pack_popads {
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            .pack_popads .pack_adslist p,
+            .pack_popads .pack_adslist label {
+                font-size: 13px;
+            }
+
+            .pack_adslist input[type="checkbox"] {
+                width: 13px;
+                height: 13px;
+            }
+
+            .popup_listpack .modal-body h4 {
+                font-size: 18px;
+            }
+
+            .package_list p.price_pack {
+                font-size: 16px;
+            }
+
+            .package_list p.price_pack span {
+                font-size: 12px;
+            }
+
+            .package_recoment .package_list h4 {
+                font-size: 15px;
+            }
+
+            .package_recoment .package_list h6 {
+                font-size: 13px;
+            }
+
+            .about_catering h2,
+            .testimonial_section h2 {
+                font-size: 25px;
+            }
+
+            .testimonial_section p,
+            .about_catering p {
+                font-size: 13px;
+            }
         }
 
         @media screen and (max-width: 500px) {
@@ -2268,6 +2332,24 @@
             .fooditem_popup .grid-view.active .expant_maingrid {
                 grid-template-columns: auto auto;
             }
+
+            .main-rightmenu .item-card p img {
+                margin-top: 0px;
+            }
+
+            .main-rightmenu .item-card p,
+            .main-rightmenu .add-item p {
+                align-items: center;
+            }
+
+            .package_recoment .package_list {
+                width: 100%;
+            }
+
+            .pack_cartbtn button {
+                font-size: 15px;
+            }
+
 
         }
 
@@ -2308,9 +2390,6 @@
                 font-size: 20px;
             }
 
-            .package_recoment .package_list {
-                width: 100%;
-            }
 
             .popup-overlay.fooditem_popup {
                 padding: 10px;
@@ -2329,6 +2408,4 @@
 </body>
 
 
-
 </html>
-
