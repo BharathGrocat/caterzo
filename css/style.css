@@ -1,90 +1,90 @@
 @font-face {
-    src: url('../font/Synonym.ttf');
+    src: url('../../font/Synonym.ttf');
     font-family: 'Synonym';
 }
 
 @font-face {
-    src: url('../font/Lexend-Regular.ttf');
+    src: url('../../font/Lexend-Regular.ttf');
     font-family: 'Lexend-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-Regular.ttf');
+    src: url('../../font/Archivo-Regular.ttf');
     font-family: 'Archivo-regular';
 }
 
 @font-face {
-    src: url('../font/Archivo-SemiBold.ttf');
+    src: url('../../font/Archivo-SemiBold.ttf');
     font-family: 'Archivo-semibold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Regular.ttf');
+    src: url('../../font/Poppins-Regular.ttf');
     font-family: 'Poppins-regular';
 }
 
 @font-face {
-    src: url('../font/Poppins-SemiBold.ttf');
+    src: url('../../font/Poppins-SemiBold.ttf');
     font-family: 'Poppins-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Poppins-Medium.ttf');
+    src: url('../../font/Poppins-Medium.ttf');
     font-family: 'Poppins-Medium';
 }
 
 @font-face {
-    src: url('../font/Poppins-Light.ttf');
+    src: url('../../font/Poppins-Light.ttf');
     font-family: 'Poppins-Light';
 }
 
 @font-face {
-    src: url('../font/Poppins-Bold.ttf');
+    src: url('../../font/Poppins-Bold.ttf');
     font-family: 'Poppins-bold';
 }
 
 @font-face {
-    src: url('../font/Inter-Bold.ttf');
+    src: url('../../font/Inter-Bold.ttf');
     font-family: 'Inter-Bold';
 }
 
 @font-face {
-    src: url('../font/Inter-SemiBold.ttf');
+    src: url('../../font/Inter-SemiBold.ttf');
     font-family: 'Inter-SemiBold';
 }
 
 @font-face {
-    src: url('../font/Inter-Light.ttf');
+    src: url('../../font/Inter-Light.ttf');
     font-family: 'Inter-Light';
 }
 
 @font-face {
-    src: url('../font/Inter-Regular.ttf');
+    src: url('../../font/Inter-Regular.ttf');
     font-family: 'Inter-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Regular.ttf');
+    src: url('../../font/Gilroy-Regular.ttf');
     font-family: 'Gilroy-regular';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Medium.ttf');
+    src: url('../../font/Gilroy-Medium.ttf');
     font-family: 'Gilroy-Medium';
 }
 
 @font-face {
-    src: url('../font/Gilroy-Bold.ttf');
+    src: url('../../font/Gilroy-Bold.ttf');
     font-family: 'Gilroy-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-extra-bold.ttf');
+    src: url('../../font/gilroy-extra-bold.ttf');
     font-family: 'Gilroy-extra-bold';
 }
 
 @font-face {
-    src: url('../font/gilroy-semibold.ttf');
+    src: url('../../font/gilroy-semibold.ttf');
     font-family: 'Gilroy-semibold';
 }
 
@@ -1907,7 +1907,7 @@ section.detail_sec {
 
 .detail_main .detail_cart {
     width: 30%;
-    padding: 50px 20px 20px;
+    padding: 20px;
     height: 800px;
 }
 
@@ -1923,8 +1923,13 @@ section.detail_sec {
     margin-bottom: 30px;
 }
 
-.detail_deliver>div {
-    width: 50%;
+.detail_deliver .detail_title {
+    width: 60%;
+    position: relative;
+}
+
+.detail_deliver .detailsuccess_main_title {
+    width: 40%;
     position: relative;
 }
 
@@ -2070,8 +2075,8 @@ section.detail_sec {
 }
 
 .recent_order img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
 .recent_order h6 {
@@ -2266,25 +2271,7 @@ div#menu_detail .customer_menu {
 }
 
 
-.main-rightmenu .item-card p,
-.main-rightmenu .add-item p {
-    font-family: 'Lexend-regular';
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px 0;
-    letter-spacing: 0.5px;
-    white-space: normal;
-    word-wrap: break-word;
-}
 
-.main-rightmenu .item-card {
-    position: relative;
-    cursor: pointer;
-    width: 100%;
-    height: 250px;
-}
 
 .main-rightmenu .add-item {
     position: relative;
@@ -2293,66 +2280,6 @@ div#menu_detail .customer_menu {
     height: 200px;
 }
 
-.main-rightmenu .item-card .menu_cardimg {
-    position: relative;
-}
-
-.main-rightmenu .menu_cardimg img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.main-rightmenu .delete-btn {
-    top: 0;
-    background: #0b080491;
-    cursor: pointer;
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    display: none;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-.main-rightmenu .delete-btn i {
-    background: #FA6A00;
-    border: none;
-    border-radius: 50%;
-    padding: 13px 15px;
-}
-
-
-.main-rightmenu .item-card:hover .delete-btn {
-    display: block;
-}
-
-.main-rightmenu .add-item .main_add {
-    width: 100%;
-    background: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    cursor: pointer;
-    font-weight: bold;
-    height: 100%;
-}
-
-.main-rightmenu .main_add span {
-    background: #707070;
-    border-radius: 50px;
-    padding: 0px 15px 6px;
-    font-size: 31px;
-}
-
-.detail_main .cart_order {
-    display: none;
-}
-
-.detail_main .detail_cart .mobcart-click {
-    display: none;
-}
 
 /* Lightbox styles */
 #menu_detail .lightbox {
@@ -4037,12 +3964,6 @@ select:focus-visible {
 
     .main-rightmenu .item-card {
         height: auto;
-    }
-
-    .main-rightmenu .menu_cardimg img {
-        height: 200px;
-        object-fit: cover;
-        width: 200px;
     }
 
     .main-rightmenu .items-grid::-webkit-scrollbar-track {
