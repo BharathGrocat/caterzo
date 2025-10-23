@@ -756,13 +756,14 @@
     </footer>
     </div>
 
-    <div class="modal fade popup_listpack" id="exampleModalview" tabindex="-1" aria-labelledby="exampleModalviewLabel"
+     <div class="modal fade popup_listpack" id="exampleModalview" tabindex="-1" aria-labelledby="exampleModalviewLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <!-- <h1 class="modal-title fs-5" id="exampleModalviewLabel">Modal title</h1> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close_packlist" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="modal-body">
                     <h4><img src="./new-img/veg.png" alt=""> Veg Mini</h4>
@@ -825,7 +826,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="popup-overlay fooditem_popup">
         <div class="popup-content">
@@ -1426,10 +1426,15 @@
             color: #1E1E1E;
         }
 
-        .modal-header button.btn-close {
+        .modal-header button.close_packlist {
             position: absolute;
             top: 1%;
             right: 2%;
+            background: #FC6C00;
+            border: 0;
+            color: #fff;
+            border-radius: 3px;
+            padding: 0px 5px;
         }
 
         .popup_listpack .modal-body {
@@ -2409,3 +2414,4 @@
 
 
 </html>
+
