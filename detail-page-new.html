@@ -92,7 +92,7 @@
             <div class="detail_main row"><!-- row start -->
                 <div class="col-lg-8 detail_content"><!-- col 1 start -->
                     <div class="main_catersec">
-                        <img src="./new-img/cater-logo.png" alt="">
+                        <img src="./new-img/cater-logo.png" class="banner" alt="">
                         <div class="detail_deliver mt-4">
                             <div class="detail_title">
                                 <h1>KJ Catering</h1>
@@ -1707,6 +1707,7 @@
 
         .main-rightmenu .menu_cardimg img {
             border-radius: 10px;
+            width: auto;
         }
 
         .main-rightmenu .item-card .menu_cardimg::before {
@@ -2175,15 +2176,15 @@
         @media screen and (max-width: 767px) {
 
             /* replace */
-            .main-rightmenu .items-grid {
+            /* .main-rightmenu .items-grid {
                 flex-wrap: wrap;
-            }
+            } */
 
-            .main-rightmenu .item-card {
+            /* .main-rightmenu .item-card {
                 position: relative;
                 cursor: pointer;
                 width: 48%;
-            }
+            } */
 
             .fooditem_popup .grid-view.active .expant_maingrid {
                 grid-template-columns: auto auto auto;
@@ -2204,6 +2205,11 @@
             .detail_deliver>div {
                 width: 100% !important;
             }
+
+            .main_catersec img.banner {
+                height: 200px;
+                object-fit: cover;
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -2211,8 +2217,8 @@
                 width: 100%;
             }
 
-            .package_list .pack_cartbtn {
-                flex-wrap: wrap;
+            .pack_cartbtn button {
+                font-size: 11px;
             }
 
             .foods_itemsearch .detailcater_menu {
@@ -2319,6 +2325,13 @@
             .about_catering p {
                 font-size: 13px;
             }
+
+            .detail_title .deliver_locat a,
+            .deliver_locat i {
+                width: 31%;
+                justify-content: center;
+                text-align: center;
+            }
         }
 
         @media screen and (max-width: 500px) {
@@ -2355,7 +2368,7 @@
             }
 
             .pack_cartbtn button {
-                font-size: 15px;
+                font-size: 13px;
             }
 
 
@@ -2456,4 +2469,3 @@
 
 
 </html>
-
